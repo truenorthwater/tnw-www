@@ -21,7 +21,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,7 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+* {
+    box-sizing: border-box;
+}
 .b-bodytext {
     font-family: helvetica, sans-serif;
     font-size: 16px;
@@ -69,7 +71,7 @@ table {
 .c-signup {
     justify-content: center;
     align-items: center;
-    max-width: 340px;
+    max-width: 420px;
     text-align: left;
     padding: 35px 25px 15px 25px;
     border: solid 1px #FC6F80;
@@ -85,23 +87,22 @@ table {
     }
 
     .c-signup__fields {
-        display: flex;
         padding-bottom: 0.75em;
         
     }
 
     .c-signup__input {
-        flex: 1 1 auto;
         background: none;
         border: solid 1px #454545;
         padding: 0.5em;
         font-size: 16px;
         line-height: 15px;
         margin-right: 0.5em;
+        margin-bottom: 0.5em;
+        width: 100%;
     }
 
     .c-signup__button {
-        flex: 0 0 auto;
         background: #FC6F80;
         border: none;
         padding: 0.65em 0.75em;
@@ -109,6 +110,23 @@ table {
         text-transform: uppercase;
         color: #FFFFFF;
     }
+
+@media screen and (min-width: 480px) {
+
+    .c-signup__fields {
+        display: flex;
+        
+    }
+
+    .c-signup__input {
+        flex: 1 1 auto;
+        margin-bottom: 0;
+    }
+
+    .c-signup__button {
+        flex: 0 0 auto;
+    }
+}
 
 .t-narrow {
     padding: 20px;
