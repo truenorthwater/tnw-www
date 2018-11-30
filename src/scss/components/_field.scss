@@ -1,0 +1,85 @@
+.c-field {
+  display: block;
+  margin-bottom: 16px;
+
+  &__inline {
+    @include flexbox();
+    margin-bottom: 0;
+  }
+
+  &__label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+    color: $black;
+
+    &--inline {
+      display: block;
+      padding-bottom: (16/16)*1em;
+    }
+  }
+
+  &__input, &__select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    display: block;
+    border: 1px solid $grey;
+    font-size: 16px;
+    padding: 14px;
+    transition: border-color 150ms ease-out;
+    outline: none;
+    border-radius: 0;
+    background-color: #FFF;
+
+    &:focus {
+      border-color: $color-secondary;
+    }
+
+    &.error {
+      border-color: $error-color;
+
+      &:focus {
+        border-color: $color-secondary;
+      }
+    }
+
+    &--inline {
+      padding-left: (24/16)*1em;
+      border-top-left-radius: (24/16)*1em;
+      border-bottom-left-radius: (24/16)*1em;
+      width: 240px;
+      font-size: 14px;
+    }
+  }
+
+  &__select {
+    background-image: svg-url('<svg width="48px" height="48px" viewBox="0 0 48 48"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect fill="#DBDAE2" x="0" y="0" width="48" height="48"></rect><path d="M31.8465234,20.1550551 C31.6397833,19.948315 31.3038306,19.948315 31.0970905,20.1550551 L24.5072498,26.757817 L17.9044879,20.1550551 C17.6977478,19.948315 17.3617952,19.948315 17.1550551,20.1550551 C16.948315,20.3617952 16.948315,20.6977478 17.1550551,20.9044879 L24.1196122,27.869045 C24.2229822,27.9724151 24.3521948,28.0241001 24.4943286,28.0241001 C24.6235412,28.0241001 24.765675,27.9724151 24.869045,27.869045 L31.8336021,20.9044879 C32.0532635,20.6977478 32.0532635,20.3617952 31.8465234,20.1550551 Z" id="Shape" fill="#5738D1" fill-rule="nonzero"></path></g></svg>');
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 48px;
+  }
+
+  &__button {
+    margin-top: 40px;
+    outline: none;
+  }
+
+  &__error {
+    display: none;
+  }
+}
+
+.error {
+  .c-field__error {
+    color: $error-color;
+    font-size: 14px;
+    margin-top: 2px;
+    display: block;
+
+    &--margin-top {
+      margin-top: 16px;
+    }
+  }
+}

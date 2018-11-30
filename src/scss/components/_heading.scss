@@ -1,0 +1,70 @@
+.heading {
+    font-weight: 600;
+    color: $black;
+
+    &--large {
+        font-size: 42px;
+        line-height: (48/42);
+        padding-bottom: (24/52)*1em;
+
+        @include breakpoint(medium) {
+          font-size: 52px;
+          line-height: (61/52);
+        }
+    }
+
+    &--medium {
+        font-size: 32px;
+        line-height: (37/32);
+        padding-bottom: (24/32)*1em;
+    }
+
+    &--small {
+        font-size: 24px;
+        line-height: (30/24);
+        padding-bottom: (24/24)*1em;
+    }
+
+    &--xsmall {
+        font-size: 18px;
+        line-height: (21/18);
+        padding-bottom: (10/18)*1em;
+    }
+
+    &--nopad {
+        padding-bottom: 0;
+    }
+
+    &--flair {
+      &:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 5px;
+        background: #DBDAE2;
+        margin-top: 24px;
+      }
+    }
+}
+
+.superheading {
+    font-size: 14px;
+    color: $color-secondary;
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: $font-secondary;
+    padding-bottom: (10/14)*1em;
+    color: $black;
+}
+
+.highlight {
+    font-weight: 1.1em;
+    color: $color-secondary;
+}

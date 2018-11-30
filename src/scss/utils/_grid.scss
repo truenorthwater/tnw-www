@@ -1,0 +1,72 @@
+
+// our css for our columns
+@mixin col-base($i) {
+  position: relative;
+  width:($i/$grid-columns) * 100%;
+}
+
+// our css for our column offset (large-offset-3, etc)
+@mixin offset-base($i) {
+  margin-left:($i/$grid-columns) * 100%;
+}
+
+// loop to generate our columns per breakpoint ( medium-3, large-7, etc )
+@mixin cols($cls) {
+  @for $i from 1 through $grid-columns {
+    .#{$cls}-#{$i} { @include col-base($i); }
+  }
+}
+
+// loop to generate our column offsets per size
+@mixin offsets($cls) {
+  @for $i from 1 through $grid-columns {
+    .#{$cls}-offset-#{$i} { @include offset-base($i); }
+  }
+}
+
+// row style
+.row {
+  font-size: 0; //inline-block fix
+  padding:0 ($gutter/2);
+  max-width: $row-width;
+  margin: 0 auto;
+  position: relative;
+
+    @include breakpoint( medium ) {
+      padding:0 ($gutter-large/2);
+    }
+
+  &--inner {
+
+    padding: 0;
+    margin: 0 ($gutter/-2);
+
+    @include breakpoint( medium ) {
+      margin: 0 ($gutter-large/-2);
+    }
+
+  }
+}
+
+  // set the default column class
+  .col {
+    @include col-base($grid-columns);
+    padding: 0 ($gutter/2);
+    display:inline-block;
+    font-size: 16px;
+    vertical-align: top;
+
+    @include breakpoint( medium ) {
+      padding: 0 ($gutter-large/2);
+    }
+  }
+
+
+@each $key, $value in $breakpoints {
+  @media screen and ( min-width: $value ) {
+
+    @include cols($key);
+    @include offsets($key);
+
+  }
+}

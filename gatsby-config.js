@@ -1,3 +1,6 @@
+const autoprefixer = require('autoprefixer');
+const browserslist = require('browserslist');
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -16,6 +19,14 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [
+          autoprefixer({ browsers: browserslist() }),
+        ],
+      },
+    },
+    'gatsby-plugin-offline'
   ],
 }

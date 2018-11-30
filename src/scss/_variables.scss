@@ -1,0 +1,38 @@
+$gutter: 16px;
+$gutter-large: 30px;
+$row-width: 1230px;
+$grid-columns: 12;
+
+// vertical spacing standards
+$padding-small: 16px;
+$padding-small-medium: 38px;
+$padding-medium: 80px;
+$padding-large: 100px;
+
+// breakpoints
+$breakpoints: (
+  base: 0px,
+  small: 480px,
+  medium: 768px,
+  large: 1040px,
+  xlarge: 1280px
+);
+
+// generate our breakpoint mixins
+@mixin breakpoint($breakpoint) {
+    $size: map-get($breakpoints, $breakpoint);
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+$font-primary: 'din-2014', sans-serif;
+$font-secondary: 'roboto', sans-serif;
+$color-primary: #FE6C3D;
+$color-secondary: #5738D1;
+$color-text: #898891;
+$light-grey: #f7f7fa;
+$grey: #DBDAE2;
+$med-grey: #EBEAF2;
+$black: #1D2029;
+$error-color: #FF3366;
