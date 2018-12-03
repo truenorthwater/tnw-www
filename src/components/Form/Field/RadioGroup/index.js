@@ -15,8 +15,8 @@ const RadioGroup = ({
             {label && <Label value={label} />}
             <span className="c-fieldgroup__wrapper c-fieldgroup__wrapper--radiogroup">
                 {options.map(option => (
-                    <span className="c-fieldgroup__item">
-                        <label key={option.id} className="c-radiooption" htmlFor={option.id}>
+                    <span key={option.id} className="c-fieldgroup__item">
+                        <label className="c-radiooption" htmlFor={option.id}>
                             <input 
                                 type="radio" 
                                 id={option.id} 

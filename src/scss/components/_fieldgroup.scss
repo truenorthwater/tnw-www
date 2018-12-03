@@ -1,4 +1,6 @@
 .c-fieldgroup {
+    padding-bottom: $padding-small;
+    
     &__wrapper {
         @include flexbox();
         margin-left: $padding-small * -1;
@@ -7,6 +9,6 @@
 
     &__item {
         @include flex(1 1 auto);
-        padding: $padding-small;
+        padding: 0 $padding-small;
     }
 }

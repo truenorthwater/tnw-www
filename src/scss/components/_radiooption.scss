@@ -1,10 +1,38 @@
 .c-radiooption {
+    display: block;
+    background: #f0f0f0;
+    padding: $padding-small;
+    overflow: hidden;
+    position: relative;
     
     &__input {
-
+        position: absolute;
+        top: -100%;
+        left: -100%;
     }
 
     &__label {
+        position: relative;
+        color: darken($color-primary, 70);
+        padding-left: 2em;
+        &:before {
+            content:"";
+            position: absolute;
+            display: block;
+            width: 1em;
+            height: 1em;
+            left: 0;
+            top: 50%;
+            margin-top: -0.5em;
+            border-radius: 1em;
+            background: $color-primary;
+        }
+    }
 
+    &__input:checked + .c-radiooption__label {
+
+        &:before {
+            background: green;
+        }
     }
 }
