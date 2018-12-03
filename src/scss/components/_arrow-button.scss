@@ -1,6 +1,8 @@
 .c-arrow-button {
-
+    text-decoration: none;
     &__icon {
-        
+        path {
+            fill: currentColor;
+        }
     }
 }

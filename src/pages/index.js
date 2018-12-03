@@ -11,16 +11,16 @@ const IndexPage = () => (
     <Hero />
 
     <section className="t-home-how">
-      <div className="row">
+      <div className="row row--padlarge">
         <div className="col">
-          <h2 className="heading heading--large">How it works</h2>
+          <h2 className="heading heading--large heading--center">How it works</h2>
         </div>
 
         <div className="col large-4 t-cta-block">
           <h3 className="heading heading--small t-cta-block__heading">100% Donations</h3>
           <p className="bodytext bodytext--large t-cta-block__largetext">100% of public donations go directly to funding our clean water projects around the world. </p>
           <p className="bodytext t-cta-block__text">We cover the cost of our overhead so that we can guarantee that every cent you donate goes towards helping others.</p>
-          <Link to="/" className="c-arrow-button c-arrow-button--primary t-cta-block__button">Learn more</Link>
+          <ArrowButton url="/" text="Learn More" />
         </div>
 
 

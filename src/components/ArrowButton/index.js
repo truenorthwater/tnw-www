@@ -4,10 +4,10 @@ import { Link } from 'gatsby';
 import IconArrowRight from "../Icon/IconArrowRight";
 
 const ArrowButton = ({ url = "", onClick, text = "", className = ""}) => (
-    <Link to={url} className="c-arrow-button">
+    <Link to={url} className={["c-arrow-button", className].join(" ")}>
         {text}
 
-        <IconArrowRight />
+        <IconArrowRight className="c-arrow-button__icon" />
     </Link>
 )
 

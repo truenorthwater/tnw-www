@@ -13,6 +13,7 @@
 @import 'components/field';
 @import 'components/fieldgroup';
 @import 'components/radiooption';
+@import 'components/arrow-button';
 
 @import 'components/logo';
 
@@ -25,4 +26,5 @@
 
 html, body {
     font-family: $font-secondary;
+    color: #4A4A4A;
 }
