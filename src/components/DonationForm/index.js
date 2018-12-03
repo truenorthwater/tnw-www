@@ -83,6 +83,14 @@ class DonationForm extends React.Component {
                         onChange={this.handleAmountChange}
                         prefix="$"
                     />
+
+                    <div className="t-impactbox">
+                        <h3 className="heading heading--small">5 People</h3>
+                        <p className="bodytext bodytext--flush">
+                            With this donation, you provide 5 people with clean water this year.  
+                            At this rate, we're on track to help 4000 people across the world.
+                        </p>
+                    </div>
                 </div>
                 <footer className="t-donation-form__footer">
                     <button className="button button--primary button--full">Donate</button>
