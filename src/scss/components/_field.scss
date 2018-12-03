@@ -19,16 +19,18 @@
     }
   }
 
+  &__input, &__select, &__prefix {
+    font-size: 16px;
+    padding: 14px;
+  }
+
   &__input, &__select {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+    border: none;
     width: 100%;
     display: block;
-    border: 1px solid $grey;
-    font-size: 16px;
-    padding: 14px;
-    transition: border-color 150ms ease-out;
     outline: none;
     border-radius: 0;
     background-color: #FFF;
@@ -52,6 +54,10 @@
       width: 240px;
       font-size: 14px;
     }
+
+    &--prefix {
+      @include flex(1 1 auto);
+    }
   }
 
   &__select {
@@ -68,6 +74,25 @@
 
   &__error {
     display: none;
+  }
+
+  &__wrapper {
+    position: relative;
+    border: 1px solid $grey;
+    transition: border-color 150ms ease-out;
+
+    &--prefix {
+      @include flexbox();
+      @include align-items(center);
+    }
+  }
+
+  &__prefix {
+   @include flex(0 0 auto);
+    color: $grey;
+    z-index: 1;
+    line-height: 15px;
+    padding-right: 0;
   }
 }
 

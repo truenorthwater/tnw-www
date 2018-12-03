@@ -1,6 +1,7 @@
 .c-fieldgroup {
-    padding-bottom: $padding-small;
-    
+    display:block;
+    padding-bottom: $padding-small *1.5;
+
     &__wrapper {
         @include flexbox();
         margin-left: $padding-small * -1;

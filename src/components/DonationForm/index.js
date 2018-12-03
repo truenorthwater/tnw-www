@@ -1,13 +1,15 @@
 import React from 'react';
 
 import RadioGroup from "../Form/Field/RadioGroup";
+import Number from "../Form/Field/Number";
 
 class DonationForm extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            frequency: "monthly"
+            frequency: "monthly",
+            amount: "25"
         }
     }
 
@@ -15,6 +17,12 @@ class DonationForm extends React.Component {
         this.setState({
             frequency: e.target.value
         })
+    }
+
+    handleAmountChange = (e) => {
+        this.setState({
+            amount: e.target.value
+        });
     }
 
     render() {
@@ -42,6 +50,38 @@ class DonationForm extends React.Component {
                         }
                         value={this.state.frequency}
                         onChange={this.handleFrequencyChange}
+                    />
+
+                    <RadioGroup 
+                        label="Recommended Amount"
+                        options={
+                            [
+                                {
+                                    id: "recommendedTen",
+                                    label: "$10",
+                                    value: "10"
+                                },
+                                {
+                                    id: "recommendedTwentyFive",
+                                    label: "$25",
+                                    value: "25"
+                                },
+                                {
+                                    id: "recommended50",
+                                    label: "$50",
+                                    value: "50"
+                                }
+                            ]
+                        }
+                        value={this.state.amount}
+                        onChange={this.handleAmountChange}
+                    />
+
+                    <Number
+                        label="Custom Amount"
+                        value={this.state.amount}
+                        onChange={this.handleAmountChange}
+                        prefix="$"
                     />
                 </div>
                 <footer className="t-donation-form__footer">

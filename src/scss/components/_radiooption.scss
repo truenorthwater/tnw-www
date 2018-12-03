@@ -1,6 +1,6 @@
 .c-radiooption {
     display: block;
-    background: #f0f0f0;
+    border: 1px solid $grey;
     padding: $padding-small;
     overflow: hidden;
     position: relative;
@@ -15,24 +15,41 @@
         position: relative;
         color: darken($color-primary, 70);
         padding-left: 2em;
-        &:before {
+
+        &:before,
+        &:after {
             content:"";
             position: absolute;
             display: block;
-            width: 1em;
-            height: 1em;
             left: 0;
             top: 50%;
-            margin-top: -0.5em;
             border-radius: 1em;
-            background: $color-primary;
         }
+
+        &:before {
+            width: 20px;
+            height: 20px;
+            margin-top: -10px;
+            border: 1px solid $grey;
+        }
+    }
+
+    &--checked {
+        border-color: $color-primary;
     }
 
     &__input:checked + .c-radiooption__label {
 
         &:before {
-            background: green;
+            border-color: $color-primary;
+        }
+
+        &:after {
+            width: 12px;
+            height: 12px;
+            margin-top: -5px;
+            background: $color-primary;
+            left: 5px;
         }
     }
 }

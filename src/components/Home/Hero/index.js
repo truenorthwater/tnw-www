@@ -22,7 +22,7 @@ const Hero = () => (
           </Link>
         </div>
 
-        <div className="col medium-5">
+        <div className="col medium-6 large-5">
             <DonationForm />
         </div>
       </div>
