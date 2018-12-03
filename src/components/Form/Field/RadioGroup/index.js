@@ -11,23 +11,24 @@ const RadioGroup = ({
     onChange = () => {} 
 }) => {
     return (
-        <span className="field field--radiogroup">
+        <span className="c-fieldgroup c-fieldgroup--radiogroup">
             {label && <Label value={label} />}
-            <span className="field__wrapper field__wrapper--radiogroup">
+            <span className="c-fieldgroup__wrapper c-fieldgroup__wrapper--radiogroup">
                 {options.map(option => (
-
-                    <label key={option.id} className="radiooption" htmlFor={option.id}>
-                        <input 
-                            type="radio" 
-                            id={option.id} 
-                            name={name} 
-                            value={option.value} 
-                            className="radiooption__input"
-                            checked={option.value === value} 
-                            onChange={onChange}
-                        />
-                        <span className="radiooption__label">{option.label}</span>
-                    </label>
+                    <span className="c-fieldgroup__item">
+                        <label key={option.id} className="c-radiooption" htmlFor={option.id}>
+                            <input 
+                                type="radio" 
+                                id={option.id} 
+                                name={name} 
+                                value={option.value} 
+                                className="c-radiooption__input"
+                                checked={option.value === value} 
+                                onChange={onChange}
+                            />
+                            <span className="c-radiooption__label">{option.label}</span>
+                        </label>
+                    </span>
                     
                 ))}
             </span>

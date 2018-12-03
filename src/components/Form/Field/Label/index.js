@@ -5,7 +5,7 @@ const Label = ({
     className = ''
 }) => {
     return (
-        <span className={['field__label', className].join(' ')}>{value}</span>
+        <span className={['c-field__label', className].join(' ')}>{value}</span>
     );
 };
 

@@ -1,0 +1,12 @@
+.c-fieldgroup {
+    &__wrapper {
+        @include flexbox();
+        margin-left: $padding-small * -1;
+        margin-right: $padding-small * -1;
+    }
+
+    &__item {
+        @include flex(1 1 auto);
+        padding: $padding-small;
+    }
+}
