@@ -29,7 +29,7 @@ class DonationForm extends React.Component {
         return (
             <form className="t-donation-form">
                 <header className="t-donation-form__header">
-                    <h3 className="heading heading--small">See Your Impact</h3>
+                    <h3 className="heading heading--small heading--flush">See Your Impact</h3>
                 </header>
                 <div className="t-donation-form__body">
                     <RadioGroup 
