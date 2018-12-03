@@ -33,13 +33,6 @@ footer, header, menu, nav, section {
     display: block;
 }
 
-input[type="button"],
-button {
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
 /* Reset `button` and button-style `input` default styles */
 input[type="submit"],
 input[type="reset"],
@@ -118,9 +111,10 @@ body:not(:-moz-handler-blocked) fieldset {
   display: table-cell;
 }
 
-*{
+* {
     box-sizing:border-box;
 }
+
 button::-moz-focus-inner {
     border: 0;
     padding: 0;

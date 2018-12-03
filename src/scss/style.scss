@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto:400,500,700');
+
 @import 'variables';
 @import 'utils/reset';
 @import 'utils/flexbox';
@@ -7,90 +9,15 @@
 @import 'components/button';
 @import 'components/heading';
 @import 'components/bodytext';
-@import 'components/table';
 @import 'components/icon';
-@import 'components/icon-content';
-@import 'components/note';
-@import 'components/card';
-@import 'components/bullet-list';
-@import 'components/row-image';
-@import 'components/list';
-@import 'components/orderlist';
-@import 'components/unorderedlist';
-@import 'components/faq';
-@import 'components/shortcard';
-@import 'components/image-label';
-@import 'components/field';
-@import 'components/error';
-@import 'components/wysiwyg';
-@import 'components/intercom';
-@import 'components/banner-box';
-@import 'components/arrow-button';
-@import 'components/guarantee-cta';
 
-@import 'templates/article';
-@import 'templates/mainnav';
-@import 'templates/contactcards';
-@import 'templates/ctabar';
-@import 'templates/footernav';
-@import 'templates/banner';
-@import 'templates/content-row';
-@import 'templates/icon-group';
-@import 'templates/flex-row';
-@import 'templates/pressrelease';
-@import 'templates/socialnav';
-@import 'templates/faq-list';
-@import 'templates/sidenav';
-@import 'templates/bullet-list';
-@import 'templates/toggle-content';
-@import 'templates/form-step';
-@import 'templates/footercopyright';
+@import 'components/logo';
 
-// home templates
-@import 'templates/home/homehero';
-@import 'templates/home/homeadvantage';
-@import 'templates/home/hometrading';
-@import 'templates/home/homecard';
-@import 'templates/home/homecustomer';
-@import 'templates/home/homeabout';
-@import 'templates/home/hometickerbar';
-@import 'templates/home/hometickerlogos';
-@import 'templates/home/homeguarantee';
 
-// defaults
-html {
-    font-family: $font-primary;
-    background: #F7F7FA;
-    color: $color-text;
-}
+@import 'templates/header';
+@import 'templates/home-hero';
+@import 'templates/donationform';
 
-body {
-    position: relative;
-}
-
-img {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 100%;
-    height: auto;
-}
-
-sup, sub {
-    font-size: 0.8em;
-    line-height: 1;
-    margin-left: 2px;
-}
-
-a {
-    display: inline-block;
-    color: $color-secondary;
-    text-decoration: none;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.hide {
-    display: none;
+html, body {
+    font-family: $font-secondary;
 }

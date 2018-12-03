@@ -1,0 +1,27 @@
+
+.c-logo {
+    @include flexbox();
+    @include align-items(center);
+    text-decoration: none;
+
+    &__mark,
+    &__word {
+        @include flex(0 0 auto);
+    }
+
+    &__mark {
+        position: relative;
+        width: 50px;
+        height: 50px * (78/66);
+    }
+
+    &__word {
+        font-size: 20px;
+        font-family: $font-secondary;
+        font-weight: 600;
+        margin-top: 1em;
+        margin-left: 0.5em;
+        letter-spacing: -1px;
+        color: darken($color-secondary, 50);
+    }
+}

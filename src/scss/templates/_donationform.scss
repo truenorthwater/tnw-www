@@ -1,0 +1,19 @@
+.t-donation-form {
+    background: white;
+    border: solid 1px darken($color-secondary, 60);
+
+    &__header,
+    &__body,
+    &__footer {
+        padding: 20px 30px;
+    }
+
+    &__header {
+        border-bottom: solid 1px #C4CFFF;
+    }
+
+    &__footer {
+        background: $color-secondary;
+        border-top: solid 1px darken($color-secondary, 60);
+    }
+}

@@ -1,0 +1,40 @@
+.t-header {
+    background: white;
+    border-bottom: solid 1px #495CB6;
+
+    &__inner {
+
+        @include flexbox();
+        @include align-items(center);
+    }
+
+    &__logo,
+    &__menuitem {
+        @include flex(0 0 auto);
+    }
+
+    &__logo {
+        padding: $padding-small;
+        padding-left: 0;
+    }
+
+    &__menu {
+        @include flexbox();
+        margin-left: auto;
+        margin-right: 40px;
+    }
+
+        &__menuitem {
+            @include flex(0 0 auto);
+        }
+
+            &__menulink {
+                display: inline-block;
+                font-size: 16px;
+                color: #495CB6;
+                text-decoration: none;
+                padding: $padding-small;
+                min-width: 120px;
+                text-align: center;
+            }
+}

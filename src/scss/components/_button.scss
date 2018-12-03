@@ -2,7 +2,8 @@
   display: inline-block;
 
   font-size: 16px;
-  min-width: (150/16)*1em;
+  font-family: $font-secondary;
+  min-width: (80/16)*1em;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0.4px;
@@ -15,11 +16,10 @@
 
   color: #FFFFFF;
   background-color: $color-primary;
-  border-radius: (24/16)*1em;
   cursor: pointer;
 
   &--primary {
-    box-shadow: 0px 7px 15px 4px rgba(#221652, 0.08);
+    border:solid 1px #D35B68;
   }
 
   &--secondary {
@@ -61,6 +61,9 @@
     width: 140px;
   }
 
+  &--full {
+    width: 100%;
+  }
 
   &--fullmobile {
     @media screen and (max-width: 420px) {

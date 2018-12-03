@@ -1,0 +1,14 @@
+.t-home-hero {
+    background-color: #2C4BDD;
+    padding: $padding-large 0;
+    
+    &__heading {
+        color: white;
+        margin-top: 1.5em;
+    }
+
+    &__body {
+        color: #CAD3FF;
+        max-width: 440px;
+    }
+}
