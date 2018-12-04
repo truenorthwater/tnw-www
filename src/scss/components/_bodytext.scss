@@ -21,7 +21,16 @@
     padding-bottom: 0px;
   }
 
-  b {
+  &--light {
+    color: #CAD3FF;
+
+    em {
+      color: white;
+    }
+  }
+
+
+  b, em {
     font-weight: 700;
   }
 }

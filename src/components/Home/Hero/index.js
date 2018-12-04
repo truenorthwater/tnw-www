@@ -12,7 +12,7 @@ const Hero = () => (
             Everyone, Everywhere, Deserves clean water.
           </h1>
 
-          <p className="t-home-hero__body bodytext bodytext--large">
+          <p className="t-home-hero__body bodytext bodytext--large bodytext--light">
             884,000,000 people do not have access to safe drinking water. 
             We're going to change that together.
           </p>

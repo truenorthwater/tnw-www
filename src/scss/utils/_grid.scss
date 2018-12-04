@@ -47,6 +47,10 @@
 
   }
 
+  &--wide {
+    max-width: $row-width-wide;
+  }
+
   &--padlarge {
     padding: $padding-large 0;
   }

@@ -1,5 +1,42 @@
 .t-footer {
     background: #2C4BDD;
     color: white;
-    padding: 90px;
+    padding: 140px 0;
+
+    &__logo {
+        .drop,
+        .leaf {
+            fill: white;
+        }
+    }
+
+    &__link {
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    &__contentright {
+        text-align: right;
+    }
+
+        &__menu {
+            padding-bottom: 70px;
+        }
+
+            &__menuitem {
+                display: inline-block;
+            }
+
+            &__menulink {
+                display: block;
+                padding: 0 1em 0.5em 1em;
+            }
+
+            &__menuitem:last-child &__menulink {
+                padding-right: 0;
+            }
+        &__charitynumber {
+            padding-bottom: 0.5em;
+        }
 }

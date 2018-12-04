@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import Hero from "../components/Home/Hero";
 import HowItWorks from "../components/Home/HowItWorks";
 import Projects from "../components/Home/Projects";
