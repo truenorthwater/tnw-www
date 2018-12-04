@@ -7,7 +7,7 @@ import ArrowButton from "../../ArrowButton";
 const Hero = () => (
     <section className="t-home-hero">
       <div className="row">
-        <div className="col medium-6">
+        <div className="col medium-6 t-home-hero__content">
           <h1 className="t-home-hero__heading heading heading--large">
             Everyone, Everywhere, Deserves clean water.
           </h1>

@@ -6,9 +6,9 @@
   color: #717896;
 
   &--large {
-    font-size: 22px;
-    line-height: (28/22);
-    padding-bottom: (30/18)*1em;
+    font-size: 18px;
+    line-height: (24/18);
+    padding-bottom: (24/18)*1em;
   }
 
   &--small {
@@ -32,5 +32,14 @@
 
   b, em {
     font-weight: 700;
+  }
+
+  @include breakpoint(medium) {
+
+    &--large {
+      font-size: 22px;
+      line-height: (28/22);
+      padding-bottom: (30/18)*1em;
+    }
   }
 }

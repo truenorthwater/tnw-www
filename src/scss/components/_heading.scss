@@ -3,9 +3,9 @@
     color: $black;
 
     &--large {
-        font-size: 42px;
-        line-height: (60/48);
-        padding-bottom: (48/48)*1em;
+        font-size: 30px;
+        line-height: (38/30);
+        padding-bottom: 1em;
         font-family:$font-primary;
     }
 
@@ -34,6 +34,48 @@
 
     &--center {
         text-align: center;
+    }
+
+    @include breakpoint(medium) {
+
+        &--large {
+            font-size: 36px;
+            line-height: (48/36);
+            padding-bottom: (36/36)*1em;
+        }
+    
+        &--medium {
+            font-size: 32px;
+            line-height: (37/32);
+            padding-bottom: (24/32)*1em;
+        }
+    
+        &--small {
+            font-size: 20px;
+            line-height: (30/20);
+            padding-bottom:(18/20)*1em;
+        }
+    }
+
+    @include breakpoint(large) {
+
+        &--large {
+            font-size: 42px;
+            line-height: (60/48);
+            padding-bottom: (48/48)*1em;
+        }
+
+        &--medium {
+            font-size: 32px;
+            line-height: (37/32);
+            padding-bottom: (24/32)*1em;
+        }
+
+        &--small {
+            font-size: 20px;
+            line-height: (30/20);
+            padding-bottom:(18/20)*1em;
+        }
     }
 
 }

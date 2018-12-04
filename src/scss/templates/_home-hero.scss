@@ -1,13 +1,26 @@
 .t-home-hero {
     background-color: #2C4BDD;
-    padding: $padding-large 0;
+    padding: 35px 0;
     
     &__heading {
         color: white;
         margin-top: 1.5em;
     }
 
-    &__body {
-        max-width: 440px;
+    &__content {
+        padding-bottom: 80px;
+    }
+
+        &__body {
+            max-width: 440px;
+        }
+
+    @include breakpoint(medium) {
+        padding: $padding-medium 0;
+    }
+
+    @include breakpoint(large) {
+
+        padding: $padding-large 0;
     }
 }
