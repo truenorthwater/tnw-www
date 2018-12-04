@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import DonationForm from "../../DonationForm";
+import ArrowButton from "../../ArrowButton";
 
 const Hero = () => (
     <section className="t-home-hero">
@@ -16,10 +17,7 @@ const Hero = () => (
             We're going to change that together.
           </p>
 
-          <Link className="button button--arrow" to="/mission">
-            Read about our mission 
-            {/* <ArrowRightIcon /> */}
-          </Link>
+          <ArrowButton url="/mission" text="Read about our mission" className="c-arrow-button--white" />
         </div>
 
         <div className="col medium-6 large-5">

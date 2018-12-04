@@ -2,10 +2,11 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
-import '../scss/style.scss'
+import Header from './Header';
+import Footer from "./Footer";
+import '../../scss/style.scss';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, title = "", description = "" }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -19,10 +20,9 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet
-          title={data.site.siteMetadata.title}
+          title={title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: description }
           ]}
         >
           <html lang="en" />
@@ -31,6 +31,7 @@ const Layout = ({ children }) => (
         <div>
           {children}
         </div>
+        <Footer />
       </>
     )}
   />

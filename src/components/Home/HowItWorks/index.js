@@ -19,7 +19,7 @@ const howItWorksContent = {
         },
         {
             subtitle: "Sustainable Success",
-            title: "It's not enough to just get the water flowing.",
+            title: "It's not enough to just get the water flowing, we're in it for the long haul.",
             body: "We want to ensure the longterm success of each of our projects. Our partners establish and train local water committees at each well site to handle repairs, maintenance and community investment.",
             linkTo: "/"
         }

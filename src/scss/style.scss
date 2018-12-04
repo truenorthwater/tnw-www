@@ -19,10 +19,14 @@
 
 
 @import 'templates/header';
-@import 'templates/home-hero';
+@import 'templates/footer';
 @import 'templates/donationform';
 @import 'templates/impactbox';
-@import 'templates/t-cta-block';
+@import 'templates/cta-block';
+
+@import 'templates/home-hero';
+@import 'templates/home-projects';
+@import 'templates/home-about';
 
 html, body {
     font-family: $font-secondary;

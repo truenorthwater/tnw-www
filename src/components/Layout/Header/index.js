@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import LogoFull from "./LogoFull";
+import LogoFull from "../../LogoFull";
 
 const Header = ({ siteTitle }) => (
   <section className="t-header">

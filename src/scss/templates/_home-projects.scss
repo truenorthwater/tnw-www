@@ -1,0 +1,20 @@
+.t-home-projects {
+    overflow: hidden;
+    position: relative;
+
+    &__inner {
+        @include flexbox();
+        @include align-items(center);
+    }
+
+    &__content {
+        @include flex(1 1 auto);
+        min-width: 520px;
+        margin-bottom: 100px;
+    }
+
+    &__map {
+        @include flex(0 0 auto);
+        transform: translate3d(-50px, 0, 0);
+    }
+}
