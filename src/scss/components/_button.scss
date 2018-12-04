@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
 
-  font-size: 16px;
+  font-size: 14px;
   font-family: $font-secondary;
   min-width: (80/16)*1em;
   font-weight: 600;
@@ -10,7 +10,7 @@
   text-align: center;
   border: solid 2px transparent;
 
-  padding: (10/16)*1em (24/16)*1em (9/16)*1em (24/16)*1em;
+  padding: (10/16)*1em (18/16)*1em (9/16)*1em (18/16)*1em;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -69,5 +69,10 @@
     @media screen and (max-width: 420px) {
       width: 100%;
     }
+  }
+
+  @include breakpoint(medium) {
+    font-size: 16px;
+    padding: (10/16)*1em (24/16)*1em (9/16)*1em (24/16)*1em;
   }
 }

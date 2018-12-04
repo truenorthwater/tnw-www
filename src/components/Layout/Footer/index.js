@@ -36,10 +36,10 @@ const Footer = () => (
           </nav>
 
           <p className="bodytext bodytext--large bodytext--light t-footer__charitynumber">
-            Registerd Charity Number:  <em>78731 5514 RR0001</em>
+            Registered Charity Number:  <em>78731 5514 RR0001</em>
           </p>
 
-          <p className="bodytext bodytext--large bodytext--light">
+          <p className="bodytext bodytext--light">
             Copyright &copy; True North Water Charity 2018
           </p>
         </div>

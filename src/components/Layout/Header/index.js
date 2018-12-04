@@ -5,7 +5,7 @@ import LogoFull from "../../LogoFull";
 
 const Header = ({ siteTitle }) => (
   <section className="t-header">
-    <nav className="t-header__inner row">
+    <nav className="t-header__inner row row--wide">
       <LogoFull className="t-header__logo" />
 
       <ul className="t-header__menu" role="menu">
