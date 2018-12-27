@@ -22,4 +22,8 @@
         color: $color-primary;
         background-color: $color-white;
     }
+
+    &:focus {
+        text-decoration: underline;
+    }
 }

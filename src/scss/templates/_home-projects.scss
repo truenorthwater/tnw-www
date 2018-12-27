@@ -8,17 +8,17 @@
     &__inner {
         @include flexbox();
         @include align-items(center);
+        min-height: 580px;
     }
 
     &__content {
         @include flex(1 1 auto);
         min-width: 520px;
-        margin-bottom: 100px;
     }
 
     &__map {
         position: absolute;
-        top: 0;
+        top: -5%;
         right: -40%;
         @include flex(0 0 auto);
         transform: translate3d(-50px, 0, 0);
