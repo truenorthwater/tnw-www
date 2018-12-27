@@ -37,7 +37,7 @@ const HowItWorks = () => (
     <section className="t-home-how">
       <div className="row row--padlarge">
         <div className="col">
-          <h2 className="heading heading--large heading--center">How It Works</h2>
+          <h2 className="heading heading--large heading--center heading--primary">How It Works</h2>
         </div>
         {howItWorksContent.items.map(content => (
             <HowItWorksItem
