@@ -55,8 +55,7 @@
     }
 
     @include breakpoint(medium) {
-
-        background: $color-black;
+        background: none;
 
         &__inner {
             @include flex-wrap(nowrap);

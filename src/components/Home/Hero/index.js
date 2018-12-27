@@ -12,7 +12,7 @@ const Hero = () => (
         <div className="row">
           <div className="col medium-6 t-home-hero__content">
             <h1 className="t-home-hero__heading heading heading--large">
-              Everyone, Everywhere, Deserves clean water.
+              Everyone, Everywhere, Deserves Clean Water
             </h1>
 
             <p className="t-home-hero__body bodytext bodytext--large bodytext--light">

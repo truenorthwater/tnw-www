@@ -1,4 +1,18 @@
 .t-cta-block {
+
+    &__image {
+        position: relative;
+        padding-top: 100%;
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+        }
+    }
+
     &__heading {
         color: $color-primary;
     }   

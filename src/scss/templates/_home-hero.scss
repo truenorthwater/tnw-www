@@ -1,10 +1,15 @@
 .t-home-hero {
     background-color: $color-black;
-    padding: 35px 0;
+    background-image: url('../images/hero_large.jpg');
+    background-size: cover;
+    background-position: top right;
+
+    &__inner {
+        padding: 35px 0;
+    }
     
     &__heading {
         color: white;
-        margin-top: 1.5em;
     }
 
     &__content {
@@ -17,11 +22,14 @@
         }
 
     @include breakpoint(medium) {
-        padding: $padding-medium 0;
+        &__inner {
+            padding: $padding-medium 0;
+        }
     }
 
     @include breakpoint(large) {
-
-        padding: $padding-large 0;
+        &__inner {
+            padding: $padding-large 0;
+        }
     }
 }

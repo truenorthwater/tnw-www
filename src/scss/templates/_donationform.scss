@@ -13,7 +13,7 @@
     }
 
     &__footer {
-        background: $color-primary;
-        border-top: solid 1px darken($color-primary, 60);
+        background: $color-grey-light;
+        border-top: solid 1px darken($color-grey-light, 20);
     }
 }
