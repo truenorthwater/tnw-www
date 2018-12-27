@@ -5,6 +5,7 @@ import WorldMap from "../../Image/WorldMap";
 
 import Tab from "../../TabGroup/Tab";
 import TabList from "../../TabGroup/TabList";
+import TabPanel from "../../TabGroup/TabPanel";
 
 import HanangombaVillageThumb from "../../../images/projects/hanangomba-village/thumbnail.jpg";
 import GwembeMarketThumb from "../../../images/projects/gwembe-market/thumbnail.jpg";
@@ -79,14 +80,14 @@ class Projects extends React.Component {
                     <TabList>
                         <Tab 
                             text="International"
-                            target="international"
+                            targetId="internationalTabPanel"
                             id="internationalTab"
                             active={!!(active === "international")}
                             onClick={this.selectInternational}
                         />
                         <Tab
                             text="Canada"
-                            target="canada"
+                            targetId="canadaTabPanel"
                             id="canadaTab"
                             active={!!(active === "canada")}
                             onClick={this.selectCanada}
@@ -95,19 +96,42 @@ class Projects extends React.Component {
                 </div>
 
                 <div className="col medium-6 medium-offset-1 t-home-projects__list">
-
-                    <ul className="t-home-projectlist">
-                        {ProjectListInternational.map((project, i) => (
-                            <li key={"projectListItem" + i} className="t-home-projectlist__item">
-                                <ProjectCard
-                                    thumbnail={project.image}
-                                    title={project.title}
-                                    subtitle={project.subtitle}
-                                    description={project.description}
-                                />
-                            </li>
-                        ))}
-                    </ul>
+                    <TabPanel
+                        tabId="interationalTab"
+                        id="internationalTabPanel"
+                        active={!!(active === "international")}
+                    >
+                        <ul className="t-home-projectlist">
+                            {ProjectListInternational.map((project, i) => (
+                                <li key={"projectListItem" + i} className="t-home-projectlist__item">
+                                    <ProjectCard
+                                        thumbnail={project.image}
+                                        title={project.title}
+                                        subtitle={project.subtitle}
+                                        description={project.description}
+                                    />
+                                </li>
+                            ))}
+                        </ul>
+                    </TabPanel>
+                    <TabPanel
+                        tabId="canadaTab"
+                        id="canadaTabPanel"
+                        active={!!(active === "canada")}
+                    >
+                        <ul className="t-home-projectlist">
+                            {ProjectListCanada.map((project, i) => (
+                                <li key={"projectListItem" + i} className="t-home-projectlist__item">
+                                    <ProjectCard
+                                        thumbnail={project.image}
+                                        title={project.title}
+                                        subtitle={project.subtitle}
+                                        description={project.description}
+                                    />
+                                </li>
+                            ))}
+                        </ul>
+                    </TabPanel>
                 </div>
 
                 </div>
