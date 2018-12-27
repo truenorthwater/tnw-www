@@ -1,0 +1,35 @@
+.c-projectcard {
+    @include flexbox();
+    position: relative;
+    background: $color-white;
+
+
+    &__thumb {
+        @include flex(0 0 auto);
+        left: 0;
+        top: 0;
+        width: 190px;
+        height: 190px;
+        padding: 10px;
+    }
+
+    &__body {
+        @include flex(1 1 auto);
+        padding: 10px 20px 10px 10px;
+    }
+
+        &__title {
+            padding-bottom: 6px;
+        }
+
+        &__subtitle {
+            padding-bottom: 6px;
+            color: $color-primary;
+        }
+
+        &__description {
+            line-height: 1.4;
+            padding-bottom: 6px;
+        }
+
+}

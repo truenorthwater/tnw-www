@@ -1,0 +1,25 @@
+.c-tab {
+    font-size: 14px;
+    font-family: $font-secondary;
+    min-width: (80/16)*1em;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    text-align: center;
+    border: solid 2px transparent;
+    min-width: 150px;
+  
+    padding: (10/16)*1em (18/16)*1em (9/16)*1em (18/16)*1em;
+    text-decoration: none;
+    text-transform: uppercase;
+  
+    color: $color-white;
+    background-color: $color-primary;
+    cursor: pointer;
+
+
+    &--inactive {
+        color: $color-primary;
+        background-color: $color-white;
+    }
+}

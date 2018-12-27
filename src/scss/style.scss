@@ -14,8 +14,10 @@
 @import 'components/fieldgroup';
 @import 'components/radiooption';
 @import 'components/arrow-button';
-
+@import 'components/projectcard';
 @import 'components/logo';
+@import 'components/tab';
+@import 'components/tabpanel';
 
 
 @import 'templates/header';
@@ -27,6 +29,7 @@
 @import 'templates/home-hero';
 @import 'templates/home-projects';
 @import 'templates/home-about';
+@import 'templates/home-projectlist';
 
 html, body {
     font-family: $font-secondary;
