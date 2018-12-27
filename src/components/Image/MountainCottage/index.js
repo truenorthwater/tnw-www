@@ -6,7 +6,7 @@ const MountainCottage = ({ className = "" }) => {
             <defs>
                 <linearGradient x1="48.4092594%" y1="0%" x2="48.4092594%" y2="75.6443595%" id="linearGradient-1">
                     <stop stopColor="#A7BCFF" offset="0%"></stop>
-                    <stop stopColor="#2C4BDD" offset="100%"></stop>
+                    <stop stopColor="#00082e" offset="100%"></stop>
                 </linearGradient>
             </defs>
             <g id="Welcome" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -18,7 +18,7 @@ const MountainCottage = ({ className = "" }) => {
                     <rect id="Rectangle-18" fill="#DAE1FF" x="10.1463415" y="12.9836066" width="11.7073171" height="7.30327869"></rect>
                     <ellipse id="Oval-2" fill="#DAE1FF" cx="16" cy="25.1557377" rx="15.2195122" ry="6.49180328"></ellipse>
                     <polygon id="Rectangle-16" fill="#7A92F6" points="0 25.1557377 32 25.1557377 28.097561 44.6311475 3.90243902 44.6311475"></polygon>
-                    <path d="M30.699187,31.647541 L28.097561,44.6311475 L3.90243902,44.6311475 L1.30081301,31.647541 L30.699187,31.647541 Z" id="Combined-Shape" fill="#FC6F80"></path>
+                    <path d="M30.699187,31.647541 L28.097561,44.6311475 L3.90243902,44.6311475 L1.30081301,31.647541 L30.699187,31.647541 Z" id="Combined-Shape" fill="#00082e"></path>
                 </g>
                 <g id="mountains" transform="translate(79.000000, 0.000000)">
                     <polygon id="Path-14" fill="#DAE1FF" points="158.347868 274.155519 410.496058 0 630.299786 256.338649"></polygon>
@@ -53,22 +53,22 @@ const MountainCottage = ({ className = "" }) => {
                 <g id="HouseAlt" transform="translate(438.000000, 141.000000)">
                     <g id="House1">
                         <rect id="Rectangle" fill="#899EF7" x="194.0599" y="19.0279188" width="13.0582363" height="34.6979695"></rect>
-                        <polygon id="Rectangle" fill="#FC6F80" points="38.4492512 -2.84217094e-14 185.354409 -2.84217094e-14 152.708819 64.9187817 5.80366057 64.9187817"></polygon>
-                        <polygon id="Rectangle" fill="#FF94A1" points="185.354409 9.32741117 185.354409 0 152.708819 64.9187817 158.14975 64.9187817"></polygon>
-                        <polygon id="Rectangle" fill="#FF94A1" transform="translate(201.677205, 32.459391) scale(-1, 1) translate(-201.677205, -32.459391) " points="218 9.32741117 218 0 185.354409 64.9187817 190.795341 64.9187817"></polygon>
+                        <polygon id="Rectangle" fill="#00082e" points="38.4492512 -2.84217094e-14 185.354409 -2.84217094e-14 152.708819 64.9187817 5.80366057 64.9187817"></polygon>
+                        <polygon id="Rectangle" fill="#6e759e" points="185.354409 9.32741117 185.354409 0 152.708819 64.9187817 158.14975 64.9187817"></polygon>
+                        <polygon id="Rectangle" fill="#6e759e" transform="translate(201.677205, 32.459391) scale(-1, 1) translate(-201.677205, -32.459391) " points="218 9.32741117 218 0 185.354409 64.9187817 190.795341 64.9187817"></polygon>
                         <polygon id="Rectangle" fill="#C4CFFF" points="158.14975 64.9187817 185.535774 8.52626406 212.921797 64.9187817 212.921797 134.687817 158.14975 134.687817"></polygon>
                         <rect id="Rectangle" fill="#A7B7FE" x="10.156406" y="64.9187817" width="147.993344" height="69.7690355"></rect>
                         <polygon id="Rectangle" fill="#7A92F6" points="10.156406 64.9187817 158.14975 64.9187817 158.14975 73.7254044 10.156406 69.0228426"></polygon>
-                        <rect id="Rectangle" fill="#FC6F80" x="177.011647" y="71.6345178" width="21.7637271" height="37.6827411"></rect>
+                        <rect id="Rectangle" fill="#00082e" x="177.011647" y="71.6345178" width="21.7637271" height="37.6827411"></rect>
                         <rect id="Rectangle" fill="#EFF2FF" x="179.913478" y="74.9923858" width="16.3227953" height="30.9670051"></rect>
                         <polygon id="Rectangle" fill="#E4E9FF" points="179.913478 74.9923858 196.236273 74.9923858 179.913478 105.959391"></polygon>
-                        <rect id="Rectangle" fill="#FC6F80" x="100.838602" y="73.8730964" width="43.1647255" height="37.6827411"></rect>
-                        <rect id="Rectangle" fill="#FC6F80" x="67.8302829" y="81.3350254" width="23.2146423" height="53.3527919"></rect>
+                        <rect id="Rectangle" fill="#00082e" x="100.838602" y="73.8730964" width="43.1647255" height="37.6827411"></rect>
+                        <rect id="Rectangle" fill="#00082e" x="67.8302829" y="81.3350254" width="23.2146423" height="53.3527919"></rect>
                         <rect id="Rectangle" fill="#FFFFFF" x="71.4575707" y="85.0659898" width="16.3227953" height="13.8045685"></rect>
                         <polygon id="Rectangle" fill="#E4E9FF" points="71.4575707 85.0659898 87.7803661 85.0659898 71.4575707 98.8705584"></polygon>
                         <rect id="Rectangle" fill="#EFF2FF" x="103.740433" y="77.2309645" width="37.3610649" height="30.9670051"></rect>
                         <polygon id="Rectangle" fill="#E4E9FF" points="103.740433 77.2309645 141.101498 77.2309645 103.740433 108.19797"></polygon>
-                        <rect id="Rectangle" fill="#FC6F80" x="17.4109817" y="73.8730964" width="43.1647255" height="37.6827411"></rect>
+                        <rect id="Rectangle" fill="#00082e" x="17.4109817" y="73.8730964" width="43.1647255" height="37.6827411"></rect>
                         <rect id="Rectangle" fill="#EFF2FF" x="20.312812" y="77.2309645" width="37.3610649" height="30.9670051"></rect>
                         <polygon id="Rectangle" fill="#E4E9FF" points="20.312812 77.2309645 57.6738769 77.2309645 20.312812 108.19797"></polygon>
                         <rect id="Rectangle" fill="#7A92F6" x="0" y="134.687817" width="158.14975" height="12.3121827"></rect>

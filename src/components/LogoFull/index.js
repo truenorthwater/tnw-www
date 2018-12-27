@@ -3,11 +3,11 @@ import { Link } from 'gatsby';
 
 import LogoMark from "../LogoMark";
 
-const LogoFull = ({ className = '' }) => {
+const LogoFull = ({ classNames = { logo: '', mark: '', word: ''} }) => {
     return (
-        <Link to="/" className={["c-logo", className].join(" ")}>
-            <LogoMark className="c-logo__mark" />
-            <span className="c-logo__word">True North Water</span>
+        <Link to="/" className={["c-logo", classNames.logo].join(" ")}>
+            <LogoMark className={["c-logo__mark", classNames.mark].join(" ")} />
+            <span className={["c-logo__word", classNames.word].join(" ")}>True North Water</span>
         </Link>
     );
 };

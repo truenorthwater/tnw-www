@@ -9,7 +9,7 @@
 
   &__label {
     font-size: 16px;
-    color: #717896;
+    color: $color-text;
     display: block;
     margin-bottom: 10px;
 
@@ -36,14 +36,14 @@
     background-color: #FFF;
 
     &:focus {
-      border-color: $color-secondary;
+      border-color: $color-primary;
     }
 
     &.error {
-      border-color: $error-color;
+      border-color: $color-error;
 
       &:focus {
-        border-color: $color-secondary;
+        border-color: $color-primary;
       }
     }
 
@@ -78,7 +78,7 @@
 
   &__wrapper {
     position: relative;
-    border: 1px solid $grey;
+    border: 1px solid $color-grey;
     transition: border-color 150ms ease-out;
 
     &--prefix {
@@ -89,7 +89,7 @@
 
   &__prefix {
    @include flex(0 0 auto);
-    color: $grey;
+    color: $color-grey;
     z-index: 1;
     line-height: 15px;
     padding-right: 0;
@@ -98,7 +98,7 @@
 
 .error {
   .c-field__error {
-    color: $error-color;
+    color: $color-error;
     font-size: 14px;
     margin-top: 2px;
     display: block;

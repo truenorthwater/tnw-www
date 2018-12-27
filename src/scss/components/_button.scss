@@ -19,18 +19,18 @@
   cursor: pointer;
 
   &--primary {
-    border:solid 1px #D35B68;
+    border:solid 1px $color-primary-darker;
   }
 
   &--secondary {
-    background-color: $color-secondary;
+    background-color: $color-primary;
     box-shadow: 0px 7px 15px 4px rgba(#6D629C, 0.2);
   }
 
   &--tertiary,
   &--text {
     background: none;
-    color: $color-secondary;
+    color: $color-primary;
   }
 
   &--tertiary {
@@ -47,6 +47,7 @@
     min-width: 0;
     padding-left: 0;
     padding-right: 0;
+    text-shadow: 0px 1px 0px 1px $color-primary-darker;
   }
 
   &--margin {
@@ -54,7 +55,7 @@
   }
 
   &--inline {
-    background-color: $color-secondary;
+    background-color: $color-primary;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     min-width: 140px;
@@ -72,7 +73,7 @@
   }
 
   @include breakpoint(medium) {
-    font-size: 16px;
-    padding: (10/16)*1em (24/16)*1em (9/16)*1em (24/16)*1em;
+    font-size: 14px;
+    padding: (10/14)*1em (24/14)*1em (9/14)*1em (24/14)*1em;
   }
 }

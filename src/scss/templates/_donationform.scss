@@ -1,6 +1,6 @@
 .t-donation-form {
     background: white;
-    border: solid 1px darken($color-secondary, 60);
+    border: solid 1px darken($color-primary, 60);
 
     &__header,
     &__body,
@@ -13,7 +13,7 @@
     }
 
     &__footer {
-        background: $color-secondary;
-        border-top: solid 1px darken($color-secondary, 60);
+        background: $color-primary;
+        border-top: solid 1px darken($color-primary, 60);
     }
 }

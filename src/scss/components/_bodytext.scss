@@ -1,19 +1,19 @@
 .bodytext {
-  font-size: 16px;
+  font-size: 14px;
   font-family: $font-secondary;
-  line-height: (24/16);
-  padding-bottom: (30/16)*1em;
-  color: #717896;
+  line-height: (24/14);
+  padding-bottom: (30/14)*1em;
+  color:$color-text;
 
   &--large {
-    font-size: 18px;
-    line-height: (24/18);
-    padding-bottom: (24/18)*1em;
+    font-size: 16px;
+    line-height: (24/16);
+    padding-bottom: (24/16)*1em;
   }
 
   &--small {
-    font-size: 14px;
-    padding-bottom: (10/16)*1em;
+    font-size: 12px;
+    padding-bottom: (10/12)*1em;
     opacity: 0.8;
   }
 
@@ -22,7 +22,7 @@
   }
 
   &--light {
-    color: #CAD3FF;
+    color: $color-grey-light;
 
     em {
       color: white;
@@ -37,9 +37,9 @@
   @include breakpoint(medium) {
 
     &--large {
-      font-size: 22px;
-      line-height: (28/22);
-      padding-bottom: (30/18)*1em;
+      font-size: 18px;
+      line-height: (28/20);
+      padding-bottom: (28/20)*1em;
     }
   }
 }

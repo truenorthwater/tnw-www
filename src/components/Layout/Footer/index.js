@@ -40,7 +40,7 @@ const Footer = () => (
           </p>
 
           <p className="bodytext bodytext--light">
-            Copyright &copy; True North Water Charity 2018
+            Copyright &copy; True North Water Charity {new Date().getFullYear()}
           </p>
         </div>
       </div>

@@ -3,10 +3,10 @@ import { Link } from 'gatsby';
 
 import LogoFull from "../../LogoFull";
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <section className="t-header">
     <nav className="t-header__inner row row--wide">
-      <LogoFull className="t-header__logo" />
+      <LogoFull classNames={{logo: "t-header__logo", word: "t-header__logoword"}} />
 
       <ul className="t-header__menu" role="menu">
         <li className="t-header__menuitem" role="presentation">

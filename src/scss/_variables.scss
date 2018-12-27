@@ -29,11 +29,14 @@ $breakpoints: (
 
 $font-primary: 'Merriweather', serif;
 $font-secondary: 'Roboto', sans-serif;
-$color-primary: #FC6F80;
-$color-secondary: #6E87FE;
-$color-text: #898891;
-$light-grey: #f7f7fa;
-$grey: #DBDAE2;
-$med-grey: #EBEAF2;
-$black: #1D2029;
-$error-color: #FF3366;
+$color-primary: #6E87FE;
+$color-primary-lighter: lighten($color-primary, 10);
+$color-primary-darker: darken($color-primary, 10);
+$color-grey-light: #dfe2f5;
+$color-grey: #6e759e;
+$color-grey-medium: #3f4773;
+$color-black: #00082e;
+$color-white: #FFFFFF;
+$color-text: $color-grey;
+
+$color-error: #FF3366;

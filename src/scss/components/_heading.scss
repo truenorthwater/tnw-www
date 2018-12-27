@@ -1,6 +1,6 @@
 .heading {
     font-weight: 600;
-    color: $black;
+    color: $color-black;
 
     &--large {
         font-size: 30px;
@@ -55,6 +55,10 @@
             line-height: (30/20);
             padding-bottom:(18/20)*1em;
         }
+
+        &--flush {
+            padding-bottom: 0;
+        }
     }
 
     @include breakpoint(large) {
@@ -76,28 +80,10 @@
             line-height: (30/20);
             padding-bottom:(18/20)*1em;
         }
+
+        &--flush {
+            padding-bottom: 0;
+        }
     }
 
-}
-
-.superheading {
-    font-size: 14px;
-    color: $color-secondary;
-    font-family: $font-secondary;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.subheading {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    font-family: $font-secondary;
-    padding-bottom: (10/14)*1em;
-    color: $black;
-}
-
-.highlight {
-    font-weight: 1.1em;
-    color: $color-secondary;
 }

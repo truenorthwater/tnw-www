@@ -1,5 +1,5 @@
 .t-home-hero {
-    background-color: #2C4BDD;
+    background-color: $color-black;
     padding: 35px 0;
     
     &__heading {
@@ -13,6 +13,7 @@
 
         &__body {
             max-width: 440px;
+            padding-bottom: (50px);
         }
 
     @include breakpoint(medium) {

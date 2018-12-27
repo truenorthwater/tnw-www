@@ -27,10 +27,7 @@ const Layout = ({ children, title = "", description = "" }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
           {children}
-        </div>
         <Footer />
       </>
     )}

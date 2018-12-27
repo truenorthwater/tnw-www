@@ -1,6 +1,5 @@
 .t-header {
-    background: white;
-    border-bottom: solid 1px #495CB6;
+    background: $color-white;
 
 
 
@@ -19,6 +18,10 @@
         padding: $padding-small;
     }
 
+    &__logoword {
+        color: $color-black;
+    }
+
     &__menu {
         width: 100%;
         @include flexbox();
@@ -27,15 +30,15 @@
 
         &__menuitem {
             @include flex(1 1 auto);
-            background: $color-secondary;
+            background: $color-grey;
         }
 
             &__menulink {
                 display: block;
-                font-size: 16px;
-                color:white;
+                font-size: 14px;
+                color: $color-grey-light;
                 text-decoration: none;
-                padding: $padding-small;
+                padding: $padding-small * 1.25;
                 text-align: center;
             }
 
@@ -53,12 +56,19 @@
 
     @include breakpoint(medium) {
 
+        background: $color-black;
+
         &__inner {
             @include flex-wrap(nowrap);
         }
 
             &__logo {
                 padding-left: 0;
+            }
+
+
+            &__logoword {
+                color: $color-white;
             }
 
             &__menu {
@@ -75,8 +85,10 @@
                 }
 
                 &__menulink {
+                    font-size: 16px;
+                    padding: $padding-small;
                     display: inline-block;
-                    color: #495CB6;
+                    color: $color-grey-light;
                     min-width: 120px;
                 }
 
