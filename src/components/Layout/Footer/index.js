@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import LogoMark from "../../LogoMark";
 
 const Footer = () => (
-    <footer className="t-footer">
+    <footer className="t-footer" id="contact">
       <div className="row row--wide">
         <div className="col medium-1">
           <LogoMark className="t-footer__logo" />
@@ -21,10 +21,10 @@ const Footer = () => (
           <nav className="bodytext bodytext--large t-footer__menu">
             <ul className="t-footer__menulist" role="menu">
               <li className="t-footer__menuitem" role="presentation">
-                <Link to="/mission" className="t-footer__menulink  t-footer__link" role="menuitem">Mission</Link>
+                <Link to="/thirst" className="t-footer__menulink  t-footer__link" role="menuitem">Thirst Initiative</Link>
               </li>
               <li className="t-footer__menuitem" role="presentation">
-                <Link to="/projects" className="t-footer__menulink  t-footer__link" role="menuitem">Projects</Link>
+                <Link to="/#projects" className="t-footer__menulink  t-footer__link" role="menuitem">Projects</Link>
               </li>
               <li className="t-footer__menuitem" role="presentation">
                 <Link to="/contact" className="t-footer__menulink  t-footer__link" role="menuitem">Contact</Link>

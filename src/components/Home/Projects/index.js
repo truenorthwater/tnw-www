@@ -63,14 +63,14 @@ class Projects extends React.Component {
         const active = this.state.active;
         console.log(this.state);
         return (
-            <section className="t-home-projects">
+            <section className="t-home-projects" id="projects">
                 <div className="row t-home-projects__inner">
                 <div className="col t-home-projects__map">
                     <WorldMap />
                 </div>
 
                 <div className="col medium-4 t-home-projects__content">
-                    <h2 className="heading heading--medium heading--white">Projects</h2>
+                    <h2 className="heading heading--medium heading--white">Recent Projects</h2>
                     <p className="bodytext bodytext--large bodytext--light">
                         We believe we can bring an end to the water crisis in our lifetime, 
                         using 100% of all donations to fund water projects around the world. 

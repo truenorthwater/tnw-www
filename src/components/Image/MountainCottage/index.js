@@ -53,22 +53,22 @@ const MountainCottage = ({ className = "" }) => {
                 <g id="HouseAlt" transform="translate(438.000000, 141.000000)">
                     <g id="House1">
                         <rect id="Rectangle" fill="#9DA3C7" x="194.0599" y="19.0279188" width="13.0582363" height="34.6979695"></rect>
-                        <polygon id="Rectangle" fill="#00082e" points="38.4492512 -2.84217094e-14 185.354409 -2.84217094e-14 152.708819 64.9187817 5.80366057 64.9187817"></polygon>
+                        <polygon id="Rectangle" fill="#9DA3C7" points="38.4492512 -2.84217094e-14 185.354409 -2.84217094e-14 152.708819 64.9187817 5.80366057 64.9187817"></polygon>
                         <polygon id="Rectangle" fill="#6e759e" points="185.354409 9.32741117 185.354409 0 152.708819 64.9187817 158.14975 64.9187817"></polygon>
                         <polygon id="Rectangle" fill="#6e759e" transform="translate(201.677205, 32.459391) scale(-1, 1) translate(-201.677205, -32.459391) " points="218 9.32741117 218 0 185.354409 64.9187817 190.795341 64.9187817"></polygon>
                         <polygon id="Rectangle" fill="#DFE2F5" points="158.14975 64.9187817 185.535774 8.52626406 212.921797 64.9187817 212.921797 134.687817 158.14975 134.687817"></polygon>
                         <rect id="Rectangle" fill="#B2B7D3" x="10.156406" y="64.9187817" width="147.993344" height="69.7690355"></rect>
                         <polygon id="Rectangle" fill="#6E759E" points="10.156406 64.9187817 158.14975 64.9187817 158.14975 73.7254044 10.156406 69.0228426"></polygon>
-                        <rect id="Rectangle" fill="#00082e" x="177.011647" y="71.6345178" width="21.7637271" height="37.6827411"></rect>
+                        <rect id="Rectangle" fill="#6E759E" x="177.011647" y="71.6345178" width="21.7637271" height="37.6827411"></rect>
                         <rect id="Rectangle" fill="#EFF2FF" x="179.913478" y="74.9923858" width="16.3227953" height="30.9670051"></rect>
                         <polygon id="Rectangle" fill="#E4E9FF" points="179.913478 74.9923858 196.236273 74.9923858 179.913478 105.959391"></polygon>
-                        <rect id="Rectangle" fill="#00082e" x="100.838602" y="73.8730964" width="43.1647255" height="37.6827411"></rect>
-                        <rect id="Rectangle" fill="#00082e" x="67.8302829" y="81.3350254" width="23.2146423" height="53.3527919"></rect>
+                        <rect id="Rectangle" fill="#6E759E" x="100.838602" y="73.8730964" width="43.1647255" height="37.6827411"></rect>
+                        <rect id="Rectangle" fill="#6E759E" x="67.8302829" y="81.3350254" width="23.2146423" height="53.3527919"></rect>
                         <rect id="Rectangle" fill="#FFFFFF" x="71.4575707" y="85.0659898" width="16.3227953" height="13.8045685"></rect>
                         <polygon id="Rectangle" fill="#E4E9FF" points="71.4575707 85.0659898 87.7803661 85.0659898 71.4575707 98.8705584"></polygon>
                         <rect id="Rectangle" fill="#EFF2FF" x="103.740433" y="77.2309645" width="37.3610649" height="30.9670051"></rect>
                         <polygon id="Rectangle" fill="#E4E9FF" points="103.740433 77.2309645 141.101498 77.2309645 103.740433 108.19797"></polygon>
-                        <rect id="Rectangle" fill="#00082e" x="17.4109817" y="73.8730964" width="43.1647255" height="37.6827411"></rect>
+                        <rect id="Rectangle" fill="#6E759E" x="17.4109817" y="73.8730964" width="43.1647255" height="37.6827411"></rect>
                         <rect id="Rectangle" fill="#EFF2FF" x="20.312812" y="77.2309645" width="37.3610649" height="30.9670051"></rect>
                         <polygon id="Rectangle" fill="#E4E9FF" points="20.312812 77.2309645 57.6738769 77.2309645 20.312812 108.19797"></polygon>
                         <rect id="Rectangle" fill="#6E759E" x="0" y="134.687817" width="158.14975" height="12.3121827"></rect>
@@ -106,9 +106,7 @@ const MountainCottage = ({ className = "" }) => {
                 <polygon id="Path-2" fill="#9DA3C7" points="321.143941 356.528571 796.506428 393.821429 300 394"></polygon>
                 <polygon id="Path-2" fill="#9DA3C7" transform="translate(248.158233, 331.910714) scale(-1, 1) translate(-248.158233, -331.910714) " points="126.316466 268 227.316466 356 370 395.821429 154.316466 378"></polygon>
                 <polygon id="water-highlight" fill="url(#linearGradient-1)" points="404.079356 268.448898 371.364675 288.28923 301.241436 378.541701 126.962633 396.139461 837.756565 396.024833 468.802756 367.919741 392.041473 287.617857 422.029677 268.448898"></polygon>
-                <polygon id="house-shadow" fill="#DFE2F5" points="595 287 457.863362 300 439 287"></polygon>
-                <polygon id="hill-highlight-2" fill="#CCD1EA" points="310.133388 253 327.419508 272.865694 268 357 372 266.760192"></polygon>
-            
+               
             </g>
         </svg>
     );

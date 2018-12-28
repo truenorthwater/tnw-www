@@ -10,7 +10,7 @@ const Header = () => (
 
       <ul className="t-header__menu" role="menu">
         <li className="t-header__menuitem" role="presentation">
-          <Link className="t-header__menulink" to="/mission" role="menuitem">Mission</Link>
+          <Link className="t-header__menulink" to="/thirst" role="menuitem">Thirst Initiative</Link>
         </li>
         <li className="t-header__menuitem" role="presentation">
           <Link className="t-header__menulink" to="/#projects" role="menuitem">Projects</Link>

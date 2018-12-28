@@ -16,6 +16,10 @@
 
     &__logo {
         padding: $padding-small;
+
+        .leaf {
+            fill: $color-grey-light;
+        }
     }
 
     &__logoword {

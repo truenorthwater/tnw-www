@@ -20,7 +20,7 @@ const Hero = () => (
               We're going to change that together.
             </p>
 
-            <ArrowButton url="/mission" text="Read about our mission" className="c-arrow-button--white" />
+            <ArrowButton url="/thirst" text="Read about the Thirst Initiative" className="c-arrow-button--white" />
           </div>
 
           <div className="col medium-6 large-5">

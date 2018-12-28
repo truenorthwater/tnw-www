@@ -13,7 +13,7 @@ const howItWorksContent = {
             image: PiggyBank,
             subtitle: "100% Donations",
             title: "100% of public donations go directly to funding our clean water projects around the world.",
-            body: "We cover the cost of our overhead so that we can guarantee that every cent you donate goes towards helping others, both in Canada and around the world. Anyone interested in supporting our admin can reach out directly.",
+            body: "We cover the cost of our overhead so that we can guarantee that every cent you donate goes towards helping others, both in Canada and around the world.",
             linkTo: "/"
         },
         {
@@ -34,22 +34,26 @@ const howItWorksContent = {
 }
 
 const HowItWorks = () => (
+    <>
     <section className="t-home-how">
-      <div className="row row--padlarge">
-        <div className="col">
-          <h2 className="heading heading--large heading--center heading--primary">How It Works</h2>
+            <div className="row">
+                <div className="t-titlebar">
+                    <h2 className="heading heading--medium heading--primary heading--flush">How It Works</h2>
+                </div>
+            </div>
+        <div className="row">
+            {howItWorksContent.items.map(content => (
+                <HowItWorksItem
+                    image={content.image}
+                    subtitle={content.subtitle}
+                    title={content.title}
+                    body={content.body}
+                    // linkTo={content.linkTo}
+                />
+            ))}
         </div>
-        {howItWorksContent.items.map(content => (
-            <HowItWorksItem
-                image={content.image}
-                subtitle={content.subtitle}
-                title={content.title}
-                body={content.body}
-                linkTo={content.linkTo}
-            />
-        ))}
-      </div>
-    </section>
+        </section>
+    </>
 )
 
 export default HowItWorks;
