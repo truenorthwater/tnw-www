@@ -1,8 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
 
 import Layout from '../components/Layout';
 import Hero from "../components/Thirst/Hero";
+import ProjectCard from "../components/ProjectCard";
+import ArrowButton from "../components/ArrowButton";
 
 import IconGlass from "../components/Icon/IconGlass";
 import IconHeart from "../components/Icon/IconHeart";
@@ -10,6 +11,11 @@ import IconHeart from "../components/Icon/IconHeart";
 import drinkupimg from "../images/thirst/drinkup.jpg";
 import howawayimg from "../images/thirst/howaway.jpg";
 import wheremoneygoesimg from "../images/thirst/wheremoneygoes.jpg";
+
+import monogramimg from "../images/thirst/monogram.jpg";
+import collectivecoffeeimg from "../images/thirst/collectivecoffee.jpg";
+
+import becomepartnerimg from "../images/thirst/becomepartner.jpg";
 
 const ThirstPage = () => (
   <Layout
@@ -79,6 +85,66 @@ const ThirstPage = () => (
                 <p className="bodytext t-cta-block__text">
                     We cover the cost of our overhead so that we can guarantee that every cent you donate goes towards helping others.
                 </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section className="t-thirst-partners">
+        <div className="row t-thirst-partners__inner">
+            <div className="col medium-4 t-thirst-partners__content">
+                <h2 className="heading heading--medium heading--white">Partners</h2>
+                <p className="bodytext bodytext--large bodytext--light">
+                    We’ve partnered with some incredible organizations who share our 
+                    dream of ending the global water crisis. Every time you order a 
+                    menu item with our logo beside it you help donate 50¢ to our 
+                    clean water projects around the world.
+                </p>
+            </div>
+
+            <div className="col medium-6 medium-offset-1 t-thirst-partners__list">
+                <ul className="t-home-projectlist">
+                    <li className="t-home-projectlist__item">
+                        <ProjectCard
+                            thumbnail={monogramimg}
+                            title="Monogram Coffee"
+                            subtitle="Calgary"
+                            description="A national award-winning team with over 20 years of experience in sourcing, roasting and serving coffee."
+                            link="http://www.monogramcoffee.com/"
+                            linkText="Visit Website"
+                            external={true}
+                        />
+                    </li>
+                    <li className="t-home-projectlist__item">
+                        <ProjectCard
+                            thumbnail={collectivecoffeeimg}
+                            title="Collective Coffee Roasters"
+                            subtitle="Elko"
+                            description="A Specialty Coffee Roaster Located in Downtown Elko Nevada."
+                            link="https://www.collectivecoffeeroasters.co/"
+                            linkText="Visit Website"
+                            external={true}
+                        />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section className="t-thirst-becomepartner">
+        <div className="row row--padlarge  t-thirst-partners__inner">
+            <div className="col medium-5">
+                <h2 className="heading heading--medium heading--primary">Become a Partner</h2>
+                <p className="bodytext bodytext--large">
+                    Interested in joining our initiative as a company dedicated to clean water initiatives? Send us an email.
+                </p>
+                <ArrowButton external={true} url="mailto:info@truenorthwater.org" text="info@truenorthwater.org" />
+            </div>
+
+            <div className="col medium-6 medium-offset-1">
+                <img src={becomepartnerimg} />
             </div>
         </div>
     </section>

@@ -37,8 +37,13 @@
 
 @import 'templates/thirst-hero';
 @import 'templates/thirst-how';
+@import 'templates/thirst-partners';
 
 html, body {
     font-family: $font-secondary;
     color: #4A4A4A;
+}
+
+img {
+    max-width: 100%;
 }

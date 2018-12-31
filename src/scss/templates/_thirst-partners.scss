@@ -1,0 +1,18 @@
+.t-thirst-partners {
+    overflow: hidden;
+    position: relative;
+    background: $color-black;
+    color: $color-white;
+    padding: $padding-medium 0;
+
+    &__inner {
+        @include flexbox();
+        @include align-items(center);
+        min-height: 580px;
+    }
+
+    &__content {
+        @include flex(1 1 auto);
+        min-width: 520px;
+    }
+}
