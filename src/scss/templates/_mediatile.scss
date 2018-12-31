@@ -1,0 +1,13 @@
+.t-mediatile {
+    @include flexbox();
+    @include align-items(center);
+
+    &__image {
+        @include flex(0 0 auto);
+        margin-right: $gutter-large;
+    }
+
+    &__content {
+        @include flex(1 1 auto);
+    }
+}

@@ -3,13 +3,22 @@
     &__image {
         position: relative;
         padding-top: 100%;
-        svg {
+        svg,
+        img {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             padding: 48px;
+        }
+
+        img {
+            padding: 0;
+        }
+
+        &--full {
+            margin-bottom: 30px;
         }
     }
 

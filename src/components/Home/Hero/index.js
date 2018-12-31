@@ -16,7 +16,7 @@ const Hero = () => (
             </h1>
 
             <p className="t-home-hero__body bodytext bodytext--large bodytext--light">
-              884,000,000 people do not have access to safe drinking water. 
+              663,000,000 people do not have access to safe drinking water. 
               We're going to change that together.
             </p>
 

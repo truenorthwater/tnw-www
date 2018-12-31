@@ -1,0 +1,12 @@
+.t-thirst-hero {
+    background: $color-black;
+
+    &__inner {
+        padding: $padding-small 0; 
+        padding-top: $padding-medium;
+    }
+
+    &__heading {
+        color: $color-white;
+    }
+}

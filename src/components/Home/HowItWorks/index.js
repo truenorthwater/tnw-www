@@ -34,7 +34,6 @@ const howItWorksContent = {
 }
 
 const HowItWorks = () => (
-    <>
     <section className="t-home-how">
             <div className="row">
                 <div className="t-titlebar">
@@ -52,8 +51,7 @@ const HowItWorks = () => (
                 />
             ))}
         </div>
-        </section>
-    </>
+    </section>
 )
 
 export default HowItWorks;

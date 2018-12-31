@@ -19,6 +19,12 @@
     }
   }
 
+  &__description {
+    font-size: 14px;
+    color: $color-grey;
+    margin-top: 0.75em;
+  }
+
   &__input, &__select, &__prefix {
     font-size: 16px;
     padding: 14px;

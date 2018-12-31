@@ -18,6 +18,7 @@
 @import 'components/logo';
 @import 'components/tab';
 @import 'components/tabpanel';
+@import 'components/progressbar';
 
 
 @import 'templates/header';
@@ -26,12 +27,16 @@
 @import 'templates/impactbox';
 @import 'templates/cta-block';
 @import 'templates/titlebar';
+@import 'templates/mediatile';
 
 @import 'templates/home-hero';
 @import 'templates/home-how';
 @import 'templates/home-projects';
 @import 'templates/home-about';
 @import 'templates/home-projectlist';
+
+@import 'templates/thirst-hero';
+@import 'templates/thirst-how';
 
 html, body {
     font-family: $font-secondary;
