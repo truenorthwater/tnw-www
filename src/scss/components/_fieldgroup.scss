@@ -1,15 +1,25 @@
+$pad: 10px;
+
 .c-fieldgroup {
     display:block;
-    padding-bottom: $padding-small *1.5;
-
-    &__wrapper {
-        @include flexbox();
-        margin-left: $padding-small * -1;
-        margin-right: $padding-small * -1;
-    }
+    padding-bottom: $pad *1.5;
 
     &__item {
-        @include flex(1 1 auto);
-        padding: 0 $padding-small;
+        display: block;
+        padding-bottom: $pad *1.5;
+    }
+
+    @media screen and (min-width: 540px) {
+
+        &__wrapper {
+            @include flexbox();
+            margin-left: $pad * -1;
+            margin-right: $pad * -1;
+        }
+
+        &__item {
+            @include flex(1 1 auto);
+            padding: 0 $pad;
+        }
     }
 }
