@@ -3,7 +3,7 @@ const browserslist = require('browserslist');
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'True North Water',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -17,6 +17,52 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         // icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: '',
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true
+      },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './src/favicon.png',
+
+        // WebApp Manifest Configuration
+        appName: 'True North Water', // Inferred with your package.json
+        appDescription: 'Canada\'s Clean Water Charity',
+        developerName: 'True North Water',
+        developerURL: 'https://truenorthwater.org',
+        dir: 'auto',
+        lang: 'en-US',
+        background: '#fff',
+        theme_color: '#fff',
+        display: 'standalone',
+        orientation: 'any',
+        start_url: '/',
+        version: '1.0',
+
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          opengraph: true,
+          twitter: true,
+          yandex: false,
+          windows: true
+        },
       },
     },
     {
