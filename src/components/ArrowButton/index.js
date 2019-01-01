@@ -13,7 +13,7 @@ const ArrowButton = ({ url = "", onClick, text = "", className = "", external = 
     );
 
     if (external) return (
-        <a href={url} className={["c-arrow-button", className].join(" ")} target="_blank">
+        <a href={url} className={["c-arrow-button", className].join(" ")}>
             {text}
             <IconArrowRight className="c-arrow-button__icon" />
         </a>

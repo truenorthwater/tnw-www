@@ -32,8 +32,8 @@ const ThirstPage = () => (
                 <h2 className="heading heading--medium heading--primary heading--flush">How It Works</h2>
             </div>
         </div>
-        <div className="row">
-            <div className="col medium-6">
+        <div className="row t-medialist">
+            <div className="col medium-6 t-medialist__item">
                 <div className="t-mediatile">
                     <div className="t-mediatile__image">
                         <IconGlass />
@@ -41,7 +41,7 @@ const ThirstPage = () => (
                     <p className="t-mediatile__content heading--small heading--flush">Step 1: Purchase a Thirst Initiative Beverage </p>
                 </div>
             </div>
-            <div className="col medium-6">
+            <div className="col medium-6 t-medialist__item">
                 <div className="t-mediatile">
                     <div className="t-mediatile__image">
                         <IconHeart />
@@ -53,38 +53,50 @@ const ThirstPage = () => (
             </div>
         </div>
 
-        <div className="row row--padmedium">
-            <div className="col large-4 t-cta-block">
-                <div className="t-cta-block__image t-cta-block__image--full"><img src={drinkupimg} /></div>
-                <h3 className="heading heading--small t-cta-block__heading">Drink Up</h3>
-                <p className="bodytext bodytext--large t-cta-block__largetext">
-                    There are two things we love for certain in this world, clean water and drinks. 
-                </p>
-                <p className="bodytext t-cta-block__text">
-                    Coffee, beer, wine, kambucha, it doesn’t matter! We're partnering with beverage companies of all shapes and sizes to reach our goals.
-                </p>
+        <div className="row">
+            <div className="col large-4">
+                <article className="t-cta-block">
+                    <div className="t-cta-block__image t-cta-block__image--full"><img src={drinkupimg} /></div>
+                    <div className="t-cta-block__content">
+                        <h3 className="heading heading--small t-cta-block__heading">Drink Up</h3>
+                        <p className="bodytext bodytext--large t-cta-block__largetext">
+                            There are two things we love for certain in this world, clean water and drinks. 
+                        </p>
+                        <p className="bodytext t-cta-block__text">
+                            Coffee, beer, wine, kambucha, it doesn’t matter! We're partnering with beverage companies of all shapes and sizes to reach our goals.
+                        </p>
+                    </div>
+                </article>
             </div>
 
-            <div className="col large-4 t-cta-block">
-                <div className="t-cta-block__image t-cta-block__image--full"><img src={howawayimg} /></div>
-                <h3 className="heading heading--small t-cta-block__heading">Home and Away</h3>
-                <p className="bodytext bodytext--large t-cta-block__largetext">
-                    We split the funds raised equally between our international and our canadian water projects.
-                </p>
-                <p className="bodytext t-cta-block__text">
-                    We believe that everyone, everywhere, deserves access to clean, safe drinking water. That’s why we split our work 50/50 between clean water projects in developing countires, and here in Canada.
-                </p>
+            <div className="col large-4">
+                <article className="t-cta-block">
+                    <div className="t-cta-block__image t-cta-block__image--full"><img src={howawayimg} /></div>
+                    <div className="t-cta-block__content">
+                        <h3 className="heading heading--small t-cta-block__heading">Home and Away</h3>
+                        <p className="bodytext bodytext--large t-cta-block__largetext">
+                            We split the funds raised equally between our international and our canadian water projects.
+                        </p>
+                        <p className="bodytext t-cta-block__text">
+                            We believe that everyone, everywhere, deserves access to clean, safe drinking water. That’s why we split our work 50/50 between clean water projects in developing countires, and here in Canada.
+                        </p>
+                    </div>
+                </article>
             </div>
 
-            <div className="col large-4 t-cta-block">
-                <div className="t-cta-block__image t-cta-block__image--full"><img src={wheremoneygoesimg} /></div>
-                <h3 className="heading heading--small t-cta-block__heading">Where the Money Goes</h3>
-                <p className="bodytext bodytext--large t-cta-block__largetext">
-                    100% of public donations go directly to funding our clean water projects around the world.
-                </p>
-                <p className="bodytext t-cta-block__text">
-                    We cover the cost of our overhead so that we can guarantee that every cent you donate goes towards helping others.
-                </p>
+            <div className="col large-4">
+                <article className="t-cta-block">
+                    <div className="t-cta-block__image t-cta-block__image--full"><img src={wheremoneygoesimg} /></div>
+                    <div className="t-cta-block__content">
+                        <h3 className="heading heading--small t-cta-block__heading">Where the Money Goes</h3>
+                        <p className="bodytext bodytext--large t-cta-block__largetext">
+                            100% of public donations go directly to funding our clean water projects around the world.
+                        </p>
+                        <p className="bodytext t-cta-block__text">
+                            We cover the cost of our overhead so that we can guarantee that every cent you donate goes towards helping others.
+                        </p>
+                    </div>
+                </article>
             </div>
         </div>
 
@@ -120,9 +132,9 @@ const ThirstPage = () => (
                         <ProjectCard
                             thumbnail={collectivecoffeeimg}
                             title="Collective Coffee Roasters"
-                            subtitle="Elko"
-                            description="A Specialty Coffee Roaster Located in Downtown Elko Nevada."
-                            link="https://www.collectivecoffeeroasters.co/"
+                            subtitle="Calgary"
+                            description="Whether it's paying farmers a fair price for their hard work, or creating strong partnerships with non-profits and charities in Canada, our goal is to change the lives of people around the world through coffee."
+                            link="https://www.ourcollective.ca/"
                             linkText="Visit Website"
                             external={true}
                         />
@@ -135,7 +147,7 @@ const ThirstPage = () => (
 
     <section className="t-thirst-becomepartner">
         <div className="row row--padlarge  t-thirst-partners__inner">
-            <div className="col medium-5">
+            <div className="col medium-5 t-thirst-partners__content">
                 <h2 className="heading heading--medium heading--primary">Become a Partner</h2>
                 <p className="bodytext bodytext--large">
                     Interested in joining our initiative as a company dedicated to clean water initiatives? Send us an email.

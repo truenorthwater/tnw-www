@@ -1,8 +1,18 @@
 .t-cta-block {
+    padding-bottom: 30px;
+    
+
 
     &__image {
+        max-width: 320px;
+
+        &:before {
+            content:"";
+            display: block;
+            padding-top: 100%;
+        }
         position: relative;
-        padding-top: 100%;
+        margin-right: 30px;
         svg,
         img {
             position: absolute;
@@ -32,11 +42,26 @@
         padding-bottom: 0.75em;
     }
 
-    &__text {
 
+    @include breakpoint(medium) {
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+
+        &__image {
+            @include flex(0 0 auto);
+            max-width: 100%;
+            width: 240px;
+            height: 240px;
+            padding-top: 0;
+        }
     }
 
-    &__button {
-
+    @include breakpoint(large) {
+        display: block;
+        &__image {
+            width: auto;
+            height: auto;
+        }
     }
 }

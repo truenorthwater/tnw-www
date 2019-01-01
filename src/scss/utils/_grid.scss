@@ -52,11 +52,11 @@
   }
 
   &--padlarge {
-    padding: $padding-large 0;
+    padding: $padding-large ($gutter/2);
   }
 
   &--padmedium {
-    padding: $padding-medium 0;
+    padding: $padding-medium ($gutter/2);
   }
 }
 

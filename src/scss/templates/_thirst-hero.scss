@@ -2,11 +2,17 @@
     background: $color-black;
 
     &__inner {
-        padding: $padding-small 0; 
-        padding-top: $padding-medium;
+        padding: 50px 0; 
     }
+
 
     &__heading {
         color: $color-white;
+    }
+
+    @include breakpoint(medium) {
+        &__inner {
+            padding: $padding-medium 0; 
+        }
     }
 }

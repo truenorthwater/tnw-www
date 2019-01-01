@@ -1,0 +1,14 @@
+.t-medialist {
+    padding-bottom: 50px;
+
+    &__item {
+        padding-bottom: 30px;
+    }
+
+    @include breakpoint(medium) {
+        &__item {
+            padding-bottom: 0;
+        }
+    }
+}
+

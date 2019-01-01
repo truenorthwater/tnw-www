@@ -5,14 +5,21 @@
     color: $color-white;
     padding: $padding-medium 0;
 
-    &__inner {
-        @include flexbox();
-        @include align-items(center);
-        min-height: 580px;
-    }
-
     &__content {
-        @include flex(1 1 auto);
-        min-width: 520px;
+        padding-bottom: 30px;
+    }
+   
+
+    @include breakpoint(medium) {
+        &__inner {
+            @include flexbox();
+            @include align-items(center);
+            min-height: 580px;
+        }
+    
+        &__content {
+            @include flex(1 1 auto);
+            min-width: 520px;
+        }
     }
 }

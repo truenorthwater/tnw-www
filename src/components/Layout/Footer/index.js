@@ -4,11 +4,11 @@ import LogoMark from "../../LogoMark";
 
 const Footer = () => (
     <footer className="t-footer" id="contact">
-      <div className="row row--wide">
-        <div className="col medium-1">
-          <LogoMark className="t-footer__logo" />
+      <div className="row row--wide t-footer__inner">
+        <div className="col large-1 t-footer__logo">
+          <LogoMark />
         </div>
-        <div className="col medium-4">
+        <div className="col medium-5 large-4  t-footer__contentleft">
           <p className="bodytext bodytext--large bodytext--light">
             True North Water is a public foundation dedicated to bringing safe, 
             clean drinking water to those around the world who desperately need it most. 
@@ -27,10 +27,10 @@ const Footer = () => (
                 <Link to="/#projects" className="t-footer__menulink  t-footer__link" role="menuitem">Projects</Link>
               </li>
               <li className="t-footer__menuitem" role="presentation">
-                <Link to="/contact" className="t-footer__menulink  t-footer__link" role="menuitem">Contact</Link>
+                <Link to="#contact" className="t-footer__menulink  t-footer__link" role="menuitem">Contact</Link>
               </li>
               <li className="t-footer__menuitem" role="presentation">
-                <Link to="/donate" className="t-footer__menulink  t-footer__link" role="menuitem">Donate</Link>
+                <button onClick={() => {}} className="t-footer__menulink  t-footer__link" role="menuitem">Donate</button>
               </li>
             </ul>
           </nav>

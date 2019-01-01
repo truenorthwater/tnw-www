@@ -8,7 +8,7 @@ const Hero = () => (
       <Header />
       <div className="t-thirst-hero__inner">
         <div className="row">
-            <div className="col medium-5 t-home-hero__content">
+            <div className="col medium-5 t-thirst-hero__content">
             <h1 className="t-thirst-hero__heading heading heading--large">
                 The Thirst Initiative
             </h1>
@@ -19,7 +19,7 @@ const Hero = () => (
 
             </div>
 
-            <div className="col medium-7 t-home-hero__goal">
+            <div className="col medium-7 t-thirst-hero__goal">
 
             <form className="t-donation-form">
                 <header className="t-donation-form__header">

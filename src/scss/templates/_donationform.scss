@@ -5,7 +5,7 @@
     &__header,
     &__body,
     &__footer {
-        padding: 20px 30px;
+        padding: 16px 20px;
     }
 
     &__header {
@@ -15,5 +15,13 @@
     &__footer {
         background: $color-grey-light;
         border-top: solid 1px darken($color-grey-light, 20);
+    }
+
+    @include breakpoint(medium) {
+        &__header,
+        &__body,
+        &__footer {
+            padding: 20px 30px;
+        }
     }
 }
