@@ -1,8 +1,5 @@
 .t-home-hero {
     background-color: $color-black;
-    background-image: url('../images/hero_large.jpg');
-    background-size: cover;
-    background-position: top right;
 
     &__inner {
         padding: 50px 0;
@@ -25,6 +22,9 @@
         }
 
     @include breakpoint(medium) {
+        background-image: url('../images/hero_large.jpg');
+        background-size: cover;
+        background-position: top right;
 
         &__content {
             padding-bottom: 80px;
