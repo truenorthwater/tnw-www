@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "true-north-water",
+  "description": "True North Water",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "True North Water",
   "dependencies": {
     "autoprefixer": "^9.3.1",
     "aws-cloudfront-invalidate": "^0.1.3",

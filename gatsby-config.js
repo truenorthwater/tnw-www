@@ -10,13 +10,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
+        name: 'true-north-water',
         short_name: 'starter',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#FFF',
+        theme_color: '#FFF',
         display: 'minimal-ui',
-        // icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/favicon.png', // This path is relative to the root of the site.
       },
     },
 
