@@ -10,7 +10,7 @@ const HowItWorksItem = ({
     body = "",
     linkTo = ""
 }) => ( 
-    <div className="col large-4 t-cta-block">
+    <article className="t-cta-block">
         {image && (
         <div className="t-cta-block__image">
             {React.createElement(image)}
@@ -22,7 +22,7 @@ const HowItWorksItem = ({
             <p className="bodytext t-cta-block__text">{body}</p>
             {!!linkTo.length && <ArrowButton url={linkTo} text="Learn More" className="c-arrow-button--primary" />}
         </div>
-    </div>
+    </article>
 )
 
 export default HowItWorksItem;

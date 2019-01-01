@@ -42,13 +42,15 @@ const HowItWorks = () => (
             </div>
         <div className="row">
             {howItWorksContent.items.map(content => (
-                <HowItWorksItem
-                    image={content.image}
-                    subtitle={content.subtitle}
-                    title={content.title}
-                    body={content.body}
-                    // linkTo={content.linkTo}
-                />
+                <div className="col large-4">
+                    <HowItWorksItem
+                        image={content.image}
+                        subtitle={content.subtitle}
+                        title={content.title}
+                        body={content.body}
+                        // linkTo={content.linkTo}
+                    />
+                </div>
             ))}
         </div>
     </section>

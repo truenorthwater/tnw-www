@@ -5,15 +5,9 @@
     color: $color-white;
     padding: $padding-medium 0;
 
-    &__inner {
-        @include flexbox();
-        @include align-items(center);
-        min-height: 580px;
-    }
 
     &__content {
-        @include flex(1 1 auto);
-        min-width: 520px;
+        padding-bottom: 30px;
     }
 
     &__map {
@@ -23,5 +17,19 @@
         @include flex(0 0 auto);
         transform: translate3d(-50px, 0, 0);
         z-index: 0;
+    }
+
+    @include breakpoint(large) {
+
+        &__inner {
+            @include flexbox();
+            @include align-items(center);
+            min-height: 580px;
+        }
+    
+        &__content {
+            @include flex(1 1 auto);
+            min-width: 520px;
+        }
     }
 }

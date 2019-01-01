@@ -38,7 +38,7 @@ const ThirstPage = () => (
                     <div className="t-mediatile__image">
                         <IconGlass />
                     </div>
-                    <p className="t-mediatile__content heading--small heading--flush">Step 1: Purchase a Thirst Initiative Beverage </p>
+                    <p className="t-mediatile__content heading--small heading--flush">Step 1: Purchase a Thirst Initiative beverage from a local partner</p>
                 </div>
             </div>
             <div className="col medium-6 t-medialist__item">
@@ -115,7 +115,7 @@ const ThirstPage = () => (
                 </p>
             </div>
 
-            <div className="col medium-6 medium-offset-1 t-thirst-partners__list">
+            <div className="col medium-7 medium-offset-1 t-thirst-partners__list">
                 <ul className="t-home-projectlist">
                     <li className="t-home-projectlist__item">
                         <ProjectCard

@@ -10,7 +10,7 @@
     }
    
 
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
         &__inner {
             @include flexbox();
             @include align-items(center);

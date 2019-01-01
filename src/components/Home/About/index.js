@@ -6,7 +6,7 @@ import MountainCottage from "../../Image/MountainCottage";
 const About = () => (
     <section className="t-home-about">
       <div className="row row--padlarge t-home-about__inner">
-        <div className="col medium-4 medium-offset-7 t-home-about__content">
+        <div className="col medium-6 medium-offset-1 large-4 large-offset-7 t-home-about__content">
             <h2 className="heading heading--medium heading--primary">About True North Water</h2>
             <p className="bodytext bodytext--large">
             True North Water is a registered Public Foundation based in Calgary, Alberta. Our goal is to help bring clean, 
