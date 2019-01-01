@@ -58,6 +58,13 @@ class DonationForm extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
+        const {
+            frequency,
+            amount
+        } = this.state;
+
+        const url = (frequency === "monthly") ? recurringPaymentUrl : singlePaymentUrl;
+        window.location = `${url}&amount=${parseFloat(amount)}`;
     }
 
     updatePeopleHelped() {
@@ -84,7 +91,7 @@ class DonationForm extends React.Component {
         } = this.state;
 
         return (
-            <form className="t-donation-form" onSubmit={this.handleSubmit}>
+            <form className="t-donation-form" onSubmit={this.handleSubmit} id="donate">
                 <header className="t-donation-form__header">
                     <h3 className="heading heading--small heading--flush">See Your Impact</h3>
                 </header>

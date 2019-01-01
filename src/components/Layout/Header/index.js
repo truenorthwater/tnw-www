@@ -21,7 +21,7 @@ const Header = () => (
       </ul>
 
       <span className="t-header__cta">
-        <button className="button button--primary">Donate</button>
+        <Link to="/#donate" className="button button--primary">Donate</Link>
       </span>
     </nav>
   </section>

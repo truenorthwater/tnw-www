@@ -30,7 +30,7 @@ const Footer = () => (
                 <Link to="#contact" className="t-footer__menulink  t-footer__link" role="menuitem">Contact</Link>
               </li>
               <li className="t-footer__menuitem" role="presentation">
-                <button onClick={() => {}} className="t-footer__menulink  t-footer__link" role="menuitem">Donate</button>
+                <Link to='/#donate' className="t-footer__menulink  t-footer__link" role="menuitem">Donate</Link>
               </li>
             </ul>
           </nav>
