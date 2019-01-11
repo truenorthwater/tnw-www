@@ -6,6 +6,12 @@ import Number from "../Form/Field/Number";
 const singlePaymentUrl = "https://true-north-water.myhelcim.com/hosted/?token=41a95c25a2effdd7751739";
 const recurringPaymentUrl = "https://true-north-water.myhelcim.com/hosted/?token=3994356cb823e1a20bde7b";
 
+const planTokens = {
+    "5": "305e83a4e77e79fbd74a8b",
+    "10": "0a0a6613369dd085659d29",
+    "25": "2d70a4a8e71eada153699a"
+};
+
 function calculatePeopleHelped(amount = 0, recurring = true) {
     let people = 1;
     let period = "year";
@@ -37,7 +43,41 @@ class DonationForm extends React.Component {
 
         this.state = {
             frequency: "monthly",
-            amount: "25",
+            amount: "10",
+            monthlyOptions: [
+                {
+                    id: "recommendedFive",
+                    label: "$5",
+                    value: "5"
+                },
+                {
+                    id: "recommendedTen",
+                    label: "$10",
+                    value: "10"
+                },
+                {
+                    id: "recommendedTwentyFive",
+                    label: "$25",
+                    value: "25"
+                }
+            ],
+            oneTimeOptions: [
+                {
+                    id: "recommendedTen",
+                    label: "$10",
+                    value: "10"
+                },
+                {
+                    id: "recommendedTwentyFive",
+                    label: "$25",
+                    value: "25"
+                },
+                {
+                    id: "recommendedFifty",
+                    label: "$50",
+                    value: "50"
+                }
+            ],
             peopleHelped: helpData.people,
             period: helpData.period,
             number: helpData.number
@@ -46,7 +86,8 @@ class DonationForm extends React.Component {
 
     handleFrequencyChange = (e) => {
         this.setState({
-            frequency: e.target.value
+            frequency: e.target.value,
+            amount: !!(e.target.value === "monthly") ? "10" : "25"
         }, () => this.updatePeopleHelped())
     }
 
@@ -63,7 +104,12 @@ class DonationForm extends React.Component {
             amount
         } = this.state;
 
-        const url = (frequency === "monthly") ? recurringPaymentUrl : singlePaymentUrl;
+        let url = (frequency === "monthly") ? recurringPaymentUrl : singlePaymentUrl; 
+
+        if (frequency === "monthly") {
+            url += `&recurringPlan=${planTokens[amount.toString()]}`
+        }
+
         window.location = `${url}&amount=${parseFloat(amount)}`;
     }
 
@@ -87,7 +133,10 @@ class DonationForm extends React.Component {
         const {
             peopleHelped,
             period,
-            number
+            number,
+            frequency,
+            monthlyOptions,
+            oneTimeOptions
         } = this.state;
 
         return (
@@ -118,40 +167,28 @@ class DonationForm extends React.Component {
 
                     <RadioGroup 
                         label="Recommended Amount"
-                        options={
-                            [
-                                {
-                                    id: "recommendedTen",
-                                    label: "$10",
-                                    value: "10"
-                                },
-                                {
-                                    id: "recommendedTwentyFive",
-                                    label: "$25",
-                                    value: "25"
-                                },
-                                {
-                                    id: "recommended50",
-                                    label: "$50",
-                                    value: "50"
-                                }
-                            ]
-                        }
+                        options={!!(frequency === "monthly") ? monthlyOptions : oneTimeOptions}
                         value={this.state.amount}
                         onChange={this.handleAmountChange}
                     />
 
-                    <Number
-                        label="Custom Amount"
-                        value={this.state.amount}
-                        onChange={this.handleAmountChange}
-                        prefix="$"
-                    />
+                    {!!(frequency !== "monthly") && (
+                        <Number
+                            label="Custom Amount"
+                            value={this.state.amount}
+                            onChange={this.handleAmountChange}
+                            prefix="$"
+                        />
+                    )}
+
+                    {!!(frequency === "monthly") && (
+                        <p className="bodytext bodytext--small"><br/></p>
+                    )}
 
                     <div className="t-impactbox">
                         <h3 className="heading heading--small">{peopleHelped} {(peopleHelped > 1 ? "People" : "Person")}</h3>
                         <p className="bodytext bodytext--flush">
-                            With this donation, you provide <em>{peopleHelped} {(peopleHelped > 1 ? "people" : "person")}</em> with clean water for <em>{number} {period}</em>! With every contribution we get closer to ending water crisis around the world. 
+                            With this donation, you provide <em>{peopleHelped} {(peopleHelped > 1 ? "people" : "person")}</em> with clean water! With every contribution we get closer to ending the global water crisis. 
                         </p>
                     </div>
                 </div>
