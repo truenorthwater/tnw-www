@@ -75,7 +75,7 @@ const ThirstPage = () => (
                     <div className="t-cta-block__content">
                         <h3 className="heading heading--small t-cta-block__heading">Home and Away</h3>
                         <p className="bodytext bodytext--large t-cta-block__largetext">
-                            We split the funds raised equally between our international and our canadian water projects.
+                            We split the funds raised equally between our international and our Canadian water projects.
                         </p>
                         <p className="bodytext t-cta-block__text">
                             We believe that everyone, everywhere, deserves access to clean, safe drinking water. That’s why we split our work 50/50 between clean water projects in developing countires, and here in Canada.
