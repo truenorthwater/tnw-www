@@ -73,6 +73,21 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-prismic',
+      options: {
+        repositoryName: process.env.PRISMIC_REPO_NAME,
+        accessToken: process.env.PRISMIC_ACCESS_TOKEN,
+        linkResolver: ({ node, key, value }) => doc => {},
+        fetchLinks: [],
+        htmlSerializer: ({ node, key, value }) => (
+          type,
+          element,
+          content,
+          children
+        ) => {}
+      },
+    }
   ],
 }
