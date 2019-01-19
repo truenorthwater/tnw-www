@@ -32,15 +32,15 @@ jobs:
       - *image_node
     steps:
       - checkout
-      - *restore_dependencies_cache
-      - run: npm install
-      - *save_dependencies_cache
     
   deploy-dev:
     docker:
       - *image_node     
     steps:
       - checkout
+      - *restore_dependencies_cache
+      - run: npm install
+      - *save_dependencies_cache
       - run: npm run deploy:dev
 
   deploy-prd:
@@ -48,6 +48,9 @@ jobs:
       - *image_node     
     steps:
       - checkout
+      - *restore_dependencies_cache
+      - run: npm install
+      - *save_dependencies_cache
       - run: npm run deploy:prd
 
 # Workflows
