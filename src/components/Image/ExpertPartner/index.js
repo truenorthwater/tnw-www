@@ -3,7 +3,7 @@ import React from "react";
 const ExpertPartner = ({ className = "" }) => {
     return (
 <svg width="581px" height="593px" viewBox="0 0 581 593">
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
         <g id="Artwork" transform="translate(-45.000000, -2234.000000)">
             <g id="ExpertPartner" transform="translate(37.000000, 2227.000000)">
                 <ellipse id="Shadow" fill="#DFE2F5" cx="298.5" cy="556" rx="290.5" ry="44"></ellipse>

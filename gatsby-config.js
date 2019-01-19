@@ -1,6 +1,8 @@
 const autoprefixer = require('autoprefixer');
 const browserslist = require('browserslist');
 
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: 'True North Water',
