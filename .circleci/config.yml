@@ -55,20 +55,18 @@ workflows:
   version: 2
   development:
     jobs:
-      - checkout:
+      - deploy-dev:
           filters:
             branches:
               only:
                 - dev
-      - deploy-dev
 
   production:
     jobs:
-      - checkout:
+      - deploy-prd:
           filters:
             branches:
               only:
                 - master
-      - deploy-prd
 
 
