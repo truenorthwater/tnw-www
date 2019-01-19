@@ -39,7 +39,7 @@ jobs:
     steps:
       - checkout
       - *restore_dependencies_cache
-      - run: yarn install
+      - run: npm install
       - *save_dependencies_cache
       - run: npm run deploy:dev
 
