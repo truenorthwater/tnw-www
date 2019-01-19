@@ -2,6 +2,7 @@ import React from "react";
 import ArrowButton from "../ArrowButton";
 
 const ProjectCard = ({ 
+    className = '',
     thumbnail = '',
     title = '',
     subtitle = '',
@@ -11,7 +12,7 @@ const ProjectCard = ({
     external = false
 }) => {
     return (
-        <article className="c-projectcard">
+        <article className={["c-projectcard", className].join(" ")}>
             <img src={thumbnail} className="c-projectcard__thumb" />
             <div className="c-projectcard__body">
                 <h3 className="c-projectcard__title heading heading--small">{title}</h3>

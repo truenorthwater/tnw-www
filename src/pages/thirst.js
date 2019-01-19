@@ -157,7 +157,7 @@ const ThirstPage = ({data}) => {
 
             <section className="t-thirst-partners">
                 <div className="row t-thirst-partners__inner">
-                    <div className="col medium-4 t-thirst-partners__content">
+                    <div className="col medium-6 t-thirst-partners__content">
                         <h2 className="heading heading--medium heading--white">Partners</h2>
                         <p className="bodytext bodytext--large bodytext--light">
                             We’ve partnered with some incredible organizations who share our 
@@ -167,12 +167,13 @@ const ThirstPage = ({data}) => {
                         </p>
                     </div>
 
-                    <div className="col medium-7 medium-offset-1 t-thirst-partners__list">
-                        <ul className="t-home-projectlist">
+                    <div className="col t-thirst-partners__list">
+                        <ul className="t-thirst-partnerlist">
                             {partners.map(partner => (
-                                <li key={partner.id} className="t-home-projectlist__item">
+                                <li key={partner.id} className="t-thirst-partnerlist__item">
                             
                                 <ProjectCard
+                                    className="t-thirst-partnerlist__card"
                                     thumbnail={partner.logo}
                                     title={partner.name}
                                     subtitle={partner.city}
@@ -183,7 +184,6 @@ const ThirstPage = ({data}) => {
                                 />
                             </li>
                             ))}
-                            
                         </ul>
                     </div>
                 </div>

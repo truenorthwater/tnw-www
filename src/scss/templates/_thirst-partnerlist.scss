@@ -1,0 +1,25 @@
+.t-thirst-partnerlist {
+    &__item {
+        padding-bottom: 20px;
+    }
+
+        &__card {
+            max-width: 640px;
+        }
+
+    @include breakpoint(large) {
+        @include flexbox();
+        @include flex-wrap(wrap);
+
+        &__item {
+            @include flex();
+            @include flex(0 0 50%);
+            width: 50%;
+            padding-right: 20px;
+        }
+
+            &__card {
+                height: 100%;
+            }
+    }
+}

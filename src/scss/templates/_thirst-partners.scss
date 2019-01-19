@@ -8,18 +8,5 @@
     &__content {
         padding-bottom: 30px;
     }
-   
 
-    @include breakpoint(large) {
-        &__inner {
-            @include flexbox();
-            @include align-items(center);
-            min-height: 580px;
-        }
-    
-        &__content {
-            @include flex(1 1 auto);
-            min-width: 520px;
-        }
-    }
 }
