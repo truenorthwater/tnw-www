@@ -31,7 +31,7 @@ const Footer = () => (
                 <Link to="/#projects" className="t-footer__menulink  t-footer__link" role="menuitem">Projects</Link>
               </li>
               <li className="t-footer__menuitem" role="presentation">
-                <Link to="#contact" className="t-footer__menulink  t-footer__link" role="menuitem">Contact</Link>
+                <Link to="/refunds" className="t-footer__menulink  t-footer__link" role="menuitem">Refund Policy</Link>
               </li>
               <li className="t-footer__menuitem" role="presentation">
                 <Link to='/#donate' className="t-footer__menulink  t-footer__link" role="menuitem">Donate</Link>
