@@ -3,7 +3,7 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 image_node: &image_node
-  image: circleci/node:6.11
+  image: circleci/node:0.15.0
 
 # CircleCI Caching                                            
 save_dependencies_cache: &save_dependencies_cache
@@ -39,7 +39,7 @@ jobs:
     steps:
       - checkout
       - *restore_dependencies_cache
-      - run: npm install
+      - run: yarn install
       - *save_dependencies_cache
       - run: npm run deploy:dev
 
