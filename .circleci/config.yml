@@ -37,8 +37,7 @@ workflows:
             branches:
               only:
                 - dev
-      - deploy-dev:
-          requires: [checkout]
+      - deploy-dev
   production:
     jobs:
       - checkout:
@@ -46,8 +45,7 @@ workflows:
             branches:
               only:
                 - master
-      - deploy-prd:
-        requires: [checkout]
+      - deploy-prd
 
 # Jobs
 jobs:
