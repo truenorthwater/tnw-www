@@ -4,7 +4,7 @@ const Sustainability = ({ className = "" }) => {
     return (
 
 <svg width="599px" height="600px" viewBox="0 0 599 600">
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Welcome" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
         <g id="Artwork" transform="translate(-35.000000, -2908.000000)">
             <g id="Sustainability" transform="translate(35.000000, 2908.000000)">
                 <rect id="Rectangle" fill="#EEF1FD" x="80" y="0" width="430" height="315"></rect>

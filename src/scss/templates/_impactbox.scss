@@ -1,4 +1,8 @@
 .t-impactbox {
     border: solid 1px $color-primary;
     padding: $padding-small;
+
+    &__heading {
+        padding-bottom: 0.25em;
+    }
 }

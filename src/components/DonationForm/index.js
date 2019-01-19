@@ -131,6 +131,7 @@ class DonationForm extends React.Component {
 
     render() {
         const {
+            amount,
             peopleHelped,
             period,
             number,
@@ -186,10 +187,23 @@ class DonationForm extends React.Component {
                     )}
 
                     <div className="t-impactbox">
-                        <h3 className="heading heading--small">{peopleHelped} {(peopleHelped > 1 ? "People" : "Person")}</h3>
-                        <p className="bodytext bodytext--flush">
-                            With this donation, you provide <em>{peopleHelped} {(peopleHelped > 1 ? "people" : "person")}</em> with clean water! With every contribution we get closer to ending the global water crisis. 
-                        </p>
+                        {!!(amount) && (
+                            <>
+                                <h3 className="heading heading--small t-impactbox__heading">{peopleHelped} {(peopleHelped > 1 ? "People" : "Person")}</h3>
+                                <p className="bodytext bodytext--flush">
+                                    With this donation, you help provide <em>{peopleHelped} {(peopleHelped > 1 ? "people" : "person")}</em> with clean water! With every contribution we get closer to ending the global water crisis. 
+                                </p>
+                            </>
+                        )}
+
+                        {!(amount) && (
+                            <>
+                                <h3 className="heading heading--small t-impactbox__heading">Together, we can do amazing things!</h3>
+                                <p className="bodytext bodytext--flush">
+                                100% of your donation will be used to bring clean water to people around the world.
+                                </p>
+                            </>
+                        )}
                     </div>
                 </div>
                 <footer className="t-donation-form__footer">
