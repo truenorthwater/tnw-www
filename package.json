@@ -33,13 +33,15 @@
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy:dev": "better-npm-run deploy:dev",
-    "deploy:prd": "better-npm-run deploy:prd"
+    "deploy:prd": "better-npm-run deploy:prd",
+    "build:ci": "node_modules/.bin/gatsby build --prefix-paths"
   },
   "betterScripts": {
-    "deploy:dev": "gatsby build --prefix-paths && s3-deploy './public/**' --cwd './public/' --bucket tnw-www-gatsby-dev --region=us-east-2 --deleteRemoved --gzip && aws-cloudfront-invalidate E1T9RN63T9U8PX",
-    "deploy:prd": "gatsby build --prefix-paths && s3-deploy './public/**' --cwd './public/' --bucket tnw-www-gatsby-prd --region=us-east-2 --deleteRemoved --gzip && aws-cloudfront-invalidate E1T9RN63T9U8PX"
+    "deploy:dev": "npm run build:ci && s3-deploy './public/**' --cwd './public/' --bucket tnw-www-gatsby-dev --region=us-east-2 --deleteRemoved --gzip && aws-cloudfront-invalidate E1T9RN63T9U8PX",
+    "deploy:prd": "npm run build:ci && s3-deploy './public/**' --cwd './public/' --bucket tnw-www-gatsby-prd --region=us-east-2 --deleteRemoved --gzip && aws-cloudfront-invalidate E28IHBFZEGN8M1"
   },
   "devDependencies": {
+    "gatsby-cli": "^2.4.8",
     "prettier": "^1.14.2"
   },
   "repository": {

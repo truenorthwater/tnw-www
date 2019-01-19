@@ -1,0 +1,78 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+image_node: &image_node
+  image: circleci/node:8.11
+
+# CircleCI Caching                                            
+save_dependencies_cache: &save_dependencies_cache
+  save_cache:
+    name: Save Yarn Package Cache
+    key: dependencies-v3-{{ .Branch }}-{{ checksum "package-lock.json" }}
+    paths:
+      - node_modules
+
+restore_dependencies_cache: &restore_dependencies_cache
+  restore_cache:
+    name: Restore Yarn Package Cache
+    keys:
+      - dependencies-v3-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      - dependencies-v3-{{ .Branch }}
+      - dependencies-v3-master
+      - dependencies-v3-
+
+# Version
+version: 2
+
+# Workflows
+
+
+workflows:
+  version: 2
+  development:
+    jobs:
+      - checkout:
+          filters:
+            branches:
+              only:
+                - dev
+      - deploy-dev:
+          requires: [checkout]
+  production:
+    jobs:
+      - checkout:
+          filters:
+            branches:
+              only:
+                - master
+      - deploy-prd:
+        requires: [checkout]
+
+# Jobs
+jobs:
+  checkout:
+    docker:
+      - *image_node
+    steps:
+      - checkout
+      - *restore_dependencies_cache
+      - run: npm install
+      - *save_dependencies_cache
+    
+  deploy-dev:
+    docker:
+      - *image_node     
+    steps:
+      - checkout
+      - run: npm run deploy:dev
+
+  deploy-prd:
+    docker:
+      - *image_node     
+    steps:
+      - checkout
+      - run: npm run deploy:prd
+
+
+
