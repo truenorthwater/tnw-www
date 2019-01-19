@@ -1,0 +1,19 @@
+.t-standard-hero {
+    background: $color-black;
+
+    &__inner {
+        padding: 50px 0; 
+    }
+
+
+    &__heading {
+        color: $color-white;
+        text-align: center;
+    }
+
+    @include breakpoint(medium) {
+        &__inner {
+            padding: 30px 0; 
+        }
+    }
+}

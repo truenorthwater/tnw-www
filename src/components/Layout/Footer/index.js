@@ -14,7 +14,11 @@ const Footer = () => (
             clean drinking water to those around the world who desperately need it most. 
           </p>
 
-          <a className="bodytext bodytext--large t-footer__link" href="mailto:info@truenorthwater.org">info@truenorthwater.org</a>
+          <a className="bodytext bodytext--large t-footer__link t-footer__email" href="mailto:info@truenorthwater.org">info@truenorthwater.org</a>
+          
+          <p className="bodytext bodytext--light">
+            65 Sherwood Lane NW, Calgary AB, T3R 0V3, Canada
+          </p>
         </div>
 
         <div className="col medium-7 t-footer__contentright">
