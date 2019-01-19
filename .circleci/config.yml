@@ -36,7 +36,7 @@ workflows:
               only:
                 - dev
       - deploy-dev:
-        require: [checkout]
+        requires: [checkout]
   production:
     jobs:
       - checkout:
@@ -45,7 +45,7 @@ workflows:
               only:
                 - master
       - deploy-prd:
-        require: [checkout]
+        requires: [checkout]
 
 # Jobs
 jobs:
