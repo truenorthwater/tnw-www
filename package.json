@@ -26,14 +26,14 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "license": "MIT", 
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy:dev": "better-npm-run deploy:dev",
-    "deploy:prd": "better-npm-run deploy:prd",
+    "deploy:dev": "node_modules/.bin/better-npm-run deploy:dev",
+    "deploy:prd": "node_modules/.bin/better-npm-run deploy:prd",
     "build:ci": "node_modules/.bin/gatsby build --prefix-paths"
   },
   "betterScripts": {
