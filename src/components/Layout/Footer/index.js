@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from "gatsby";
 import LogoMark from "../../LogoMark";
 
+import IconFacebook from "../../Icon/IconFacebook";
+import IconTwitter from "../../Icon/IconTwitter";
+import IconInstagram from "../../Icon/IconInstagram";
+
 const Footer = () => (
     <footer className="t-footer" id="contact">
       <div className="row row--wide t-footer__inner">
@@ -35,6 +39,26 @@ const Footer = () => (
               </li>
               <li className="t-footer__menuitem" role="presentation">
                 <Link to='/#donate' className="t-footer__menulink  t-footer__link" role="menuitem">Donate</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <nav className="t-footer__social">
+            <ul className="t-footer__sociallist"  role="menu">
+              <li className="t-footer__socialitem" role="presentation">
+                <a className="t-footer__sociallink" href="https://www.facebook.com/truenorthwater/">
+                  <IconFacebook className="t-footer__socialicon" />
+                </a>
+              </li>
+              <li className="t-footer__socialitem" role="presentation">
+                <a className="t-footer__sociallink" href="https://twitter.com/truenorthwater/">
+                  <IconTwitter className="t-footer__socialicon" />
+                </a>
+              </li>
+              <li className="t-footer__socialitem" role="presentation">
+                <a className="t-footer__sociallink" href="https://www.instagram.com/truenorthwater/">
+                  <IconInstagram className="t-footer__socialicon" />
+                </a>
               </li>
             </ul>
           </nav>

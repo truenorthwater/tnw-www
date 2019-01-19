@@ -25,7 +25,7 @@
 
 
         &__menu {
-            padding-bottom: 64px;
+            padding-bottom: 24px;
         }
 
             &__menuitem {
@@ -44,6 +44,27 @@
             padding-bottom: 0.5em;
         }
 
+
+        &__social {
+            padding-bottom: 30px;
+        }
+
+            &__socialitem {
+                display: inline-block;
+            }
+
+                &__sociallink {
+                    padding: $gutter-large $gutter-large $gutter-large 0;
+                }
+
+                &__socialicon {
+                    width: 24px;
+                    height: 24px;
+                    path {
+                        fill: #FFFFFF;
+                    }
+                }
+
     @include breakpoint(medium) {
         padding: 140px 0;
         
@@ -54,6 +75,12 @@
             &__menulink {
                 padding: 0 0.75em 0.5em 0.75em;
             }
+
+
+            &__sociallink {
+                padding: $gutter-large 0 $gutter-large $gutter-large;
+            }
+
     }
 
 
