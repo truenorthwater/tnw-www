@@ -26,8 +26,6 @@ restore_dependencies_cache: &restore_dependencies_cache
 version: 2
 
 # Workflows
-
-
 workflows:
   version: 2
   development:
@@ -37,7 +35,8 @@ workflows:
             branches:
               only:
                 - dev
-      - deploy-dev
+      - deploy-dev:
+        require: [checkout]
   production:
     jobs:
       - checkout:
@@ -45,7 +44,8 @@ workflows:
             branches:
               only:
                 - master
-      - deploy-prd
+      - deploy-prd:
+        require: [checkout]
 
 # Jobs
 jobs:
