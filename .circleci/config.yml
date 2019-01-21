@@ -48,9 +48,9 @@ jobs:
       - *image_node     
     steps:
       - checkout
-      - *restore_dependencies_cache
+      #- *restore_dependencies_cache
       - run: npm install
-      - *save_dependencies_cache
+      #- *save_dependencies_cache
       - run: npm run deploy:prd
 
 # Workflows
