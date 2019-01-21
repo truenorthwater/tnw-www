@@ -27,6 +27,17 @@ version: 2
 
 # Jobs
 jobs:
+  # this is a workaround to get CI workin with prismic webhooks
+  # and really this should never have been done at all
+  build:
+    docker:
+      - *image_node     
+    steps:
+      - checkout
+      #- *restore_dependencies_cache
+      - run: npm install
+      #- *save_dependencies_cache
+      - run: npm run deploy:prd
   checkout:
     docker:
       - *image_node
