@@ -1,0 +1,21 @@
+.c-project-description {
+
+    h1 {
+        @extend .heading;
+        @extend .heading--large;
+    }
+
+    h2 {
+        @extend .heading;
+        @extend .heading--medium;
+    }
+
+    h3 {
+        @extend .heading;
+        @extend .heading--small;
+    }
+    
+    p {
+        @extend .bodytext;
+    }
+}

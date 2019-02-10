@@ -1,0 +1,18 @@
+.t-project-hero {
+    background: $color-black;
+
+    &__inner {
+        padding: 50px 0; 
+    }
+
+
+    &__heading {
+        color: $color-white;
+    }
+
+    @include breakpoint(medium) {
+        &__inner {
+            padding: 50px 0; 
+        }
+    }
+}

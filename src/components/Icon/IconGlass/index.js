@@ -1,7 +1,7 @@
 import React from 'react';
 
-const IconGlass = ({ className = "" }) => (
-<svg width="100px" height="100px" viewBox="0 0 100 100">
+const IconGlass = ({ className = "", width = "100px", height = "100px" }) => (
+<svg width={width} height={height} viewBox="0 0 100 100">
     <g id="Welcome" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="thirst/v2" transform="translate(-112.000000, -754.000000)">
             <circle id="Oval" fill="#DFE2F5" cx="162" cy="804" r="50"></circle>

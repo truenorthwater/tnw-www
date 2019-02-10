@@ -1,0 +1,27 @@
+.c-image-gallery {
+    padding-bottom: 30px;
+
+    &__selected {
+        margin-bottom: 1em;
+    }
+
+    &__thumblist {
+        @include flexbox();
+        @include flex-wrap(wrap);
+    }
+
+    &__thumbitem {
+        @include flex(0 0 auto);
+        margin-right: 1em;
+        width: 110px;
+    }
+
+    &__thumb {
+        display: block;
+        width: 100%;
+        padding-top: 100%;
+        background-size: cover;
+        background-position: center;
+        background-color: grey;
+    }
+}

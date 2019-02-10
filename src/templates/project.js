@@ -2,9 +2,14 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
+import Header from "../components/Layout/Header";
+import ImageGallery from "../components/ImageGallery";
+
+import IconGlass from "../components/Icon/IconGlass";
+import IconHeart from "../components/Icon/IconHeart";
+
 
 function sanitizePrismicProject(prismicProject) {
-    console.log(prismicProject);
     const {
         name,
         slug,
@@ -43,14 +48,70 @@ function sanitizePrismicProject(prismicProject) {
 
 const Project = ({ data: { prismicProject }}) => {
 
-    const project = sanitizePrismicProject(prismicProject);
-    console.log(project);
+    const {
+        name,
+        slug,
+        solution,
+        location,
+        start_date,
+        completion_date,
+        people_served,
+        implementing_partner,
+        distance_to_water_source,
+        description,
+        intro_text,
+        images
+    } = sanitizePrismicProject(prismicProject);
+
     return (
         <Layout
-            title={project.name}
-            description={project.intro_text}
+            title={name}
+            description={intro_text}
         >
-            some project
+            <section className="t-project-hero">
+                <Header />
+
+                <div className="row t-project-hero__inner">
+                    <h1 className="t-project-hero__inner heading heading--large heading--white heading--center">{ name }</h1>
+                </div>
+            </section>
+
+
+            <div className="row row--padlarge t-project-main">
+                <div className="t-project-main__content col large-8">
+                    <ImageGallery images={images} />
+                    <div className="c-project-description" dangerouslySetInnerHTML={{__html: description}} />
+                </div>
+
+                <div className="t-project-main__sidebar col large-4">
+
+                    <div className="t-mediatile">
+                        <span className="t-mediatile__image">
+                            <IconGlass width="72px" height="72px" />
+                        </span>
+
+                        <span className="t-mediatile__content">
+                            <span className="c-field__label">Solution</span>
+                            <span className="heading heading--medium">{solution}</span>
+                        </span>
+                    </div>
+
+                    <br/>
+                    <br/>
+
+                    <div className="t-mediatile">
+                        <span className="t-mediatile__image">
+                            <IconHeart width="72px" height="72px" />
+                        </span>
+            
+                        <span className="t-mediatile__content">
+                            <span className="c-field__label">People Served</span>
+                            <span className="heading heading--medium">{people_served}</span>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
         </Layout>
     )
 }

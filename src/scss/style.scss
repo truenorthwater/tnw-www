@@ -19,6 +19,9 @@
 @import 'components/tab';
 @import 'components/tabpanel';
 @import 'components/progressbar';
+@import 'components/image-gallery';
+
+@import 'components/project-description';
 
 
 @import 'templates/header';
@@ -41,6 +44,9 @@
 @import 'templates/thirst-how';
 @import 'templates/thirst-partners';
 @import 'templates/thirst-partnerlist';
+
+@import 'templates/project-hero';
+@import 'templates/project-main';
 
 html, body {
     font-family: $font-secondary;
