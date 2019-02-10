@@ -1,9 +1,28 @@
 .t-project-main {
+    @include flexbox();
+    @include flex-wrap(wrap);
+
     &__content {
-        padding-right: 60px;
+        @include flex(0 0 auto);
+        order: 2;
     }
 
     &__sidebar {
-
+        @include flex(0 0 auto);
+        order: 1;
     }
+
+
+    @include breakpoint(large) {
+        display: block;
+
+        &__content {
+            padding-right: 60px;
+        }
+    
+        &__sidebar {
+    
+        }
+    }
+   
 }

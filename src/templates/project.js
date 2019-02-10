@@ -110,6 +110,40 @@ const Project = ({ data: { prismicProject }}) => {
                         </span>
                     </div>
 
+                    <br/>
+                    <br/>
+
+                    <table className="c-project-details" width="100%">
+                        <thead className="c-project-details__header">
+                            <th className="c-project-details__heading" colSpan="2">
+                                <h3 className="heading heading--small">Project Details</h3>
+                            </th>
+                        </thead>
+                        <tbody className="c-project-details__body">
+                            <tr className="c-project-details__row">
+                                <td className="c-project-details__key">Start Date</td>
+                                <td className="c-project-details__value">{start_date}</td>
+                            </tr>
+                            <tr className="c-project-details__row">
+                                <td className="c-project-details__key">Completion Date</td>
+                                <td className="c-project-details__value">{completion_date}</td>
+                            </tr>
+                            <tr className="c-project-details__row">
+                                <td className="c-project-details__key">Location</td>
+                                <td className="c-project-details__value">{location}</td>
+                            </tr>
+                            <tr className="c-project-details__row">
+                                <td className="c-project-details__key">Previous Water Distance</td>
+                                <td className="c-project-details__value">{distance_to_water_source}</td>
+                            </tr>
+                            <tr className="c-project-details__row">
+                                <td className="c-project-details__key">Implementing Partner</td>
+                                <td className="c-project-details__value">{implementing_partner}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
                 </div>
             </div>
         </Layout>
