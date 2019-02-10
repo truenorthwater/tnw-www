@@ -7,10 +7,11 @@ import Tab from "../../TabGroup/Tab";
 import TabList from "../../TabGroup/TabList";
 import TabPanel from "../../TabGroup/TabPanel";
 
+import ProjectList from "./ProjectList";
+
 import HanangombaVillageThumb from "../../../images/projects/hanangomba-village/thumbnail.jpg";
 import GwembeMarketThumb from "../../../images/projects/gwembe-market/thumbnail.jpg";
 import WaterFirstThumb from "../../../images/projects/water-first/thumbnail.jpg";
-
 
 
 const ProjectListInternational = [
@@ -62,6 +63,8 @@ class Projects extends React.Component {
     render() {
         const active = this.state.active;
         console.log(this.state);
+
+        console.log(this.props);
         return (
             <section className="t-home-projects" id="projects">
                 <div className="row t-home-projects__inner">
@@ -102,16 +105,7 @@ class Projects extends React.Component {
                         active={!!(active === "international")}
                     >
                         <ul className="t-home-projectlist">
-                            {ProjectListInternational.map((project, i) => (
-                                <li key={"projectListItem" + i} className="t-home-projectlist__item">
-                                    <ProjectCard
-                                        thumbnail={project.image}
-                                        title={project.title}
-                                        subtitle={project.subtitle}
-                                        description={project.description}
-                                    />
-                                </li>
-                            ))}
+                            <ProjectList category="international" />
                         </ul>
                     </TabPanel>
                     <TabPanel

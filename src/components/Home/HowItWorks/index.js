@@ -41,8 +41,8 @@ const HowItWorks = () => (
                 </div>
             </div>
         <div className="row">
-            {howItWorksContent.items.map(content => (
-                <div className="col large-4">
+            {howItWorksContent.items.map((content, i) => (
+                <div className="col large-4" key={`content-${i}`}>
                     <HowItWorksItem
                         image={content.image}
                         subtitle={content.subtitle}

@@ -3,7 +3,7 @@ import React from "react";
 const PiggyBank = ({ className = "" }) => {
     return (
 <svg width="581px" height="599px" viewBox="0 0 581 599">
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
+    <g id="Welcome" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="Artwork" transform="translate(-46.000000, -1582.000000)">
             <g id="PiggyBank" transform="translate(39.000000, 1581.000000)">
                 <ellipse id="Shadow" fill="#DFE2F5" cx="297.5" cy="556" rx="290.5" ry="44"></ellipse>
