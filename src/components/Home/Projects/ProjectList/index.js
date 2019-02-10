@@ -59,7 +59,6 @@ const ProjectList = ({ data }) => {
         <StaticQuery
             query={query}
             render={({ allPrismicProject }) => {
-                console.log(allPrismicProject);
                 const projects = sanitizePrismicProjects(allPrismicProject);
                 return (
                     <ul className="t-home-projectlist">

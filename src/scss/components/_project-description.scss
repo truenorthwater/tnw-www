@@ -14,8 +14,26 @@
         @extend .heading;
         @extend .heading--small;
     }
-    
+
+    h4 {
+        @extend .heading;
+        @extend .heading--xsmall;
+    }
+
     p {
         @extend .bodytext;
+    }
+
+    ul,
+    ol {
+        @extend .c-bullet-list;
+    }
+
+    ol {
+        @extend .c-bullet-list--numeric;
+    }
+
+    li {
+        @extend .c-bullet-list__item;
     }
 }

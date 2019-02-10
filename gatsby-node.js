@@ -40,7 +40,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const projects = projectData.data.allPrismicProject.edges || [];
 
-  console.log('projects', projects);
   projects.forEach(edge => {
     const project = edge.node;
     createPage({

@@ -68,7 +68,6 @@ function sanitizePrismicThirstPartners(partnerData) {
 const ThirstPage = ({data}) => { 
     const partners = sanitizePrismicThirstPartners(data.allPrismicThirstpartner); 
 
-    console.log(partners);
     return (
         <Layout
             title="Thirst Initiative - True North Water"

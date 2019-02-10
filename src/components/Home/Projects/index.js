@@ -9,25 +9,8 @@ import TabPanel from "../../TabGroup/TabPanel";
 
 import ProjectList from "./ProjectList";
 
-import HanangombaVillageThumb from "../../../images/projects/hanangomba-village/thumbnail.jpg";
-import GwembeMarketThumb from "../../../images/projects/gwembe-market/thumbnail.jpg";
 import WaterFirstThumb from "../../../images/projects/water-first/thumbnail.jpg";
 
-
-const ProjectListInternational = [
-    {
-        image: HanangombaVillageThumb,
-        title: "Hanangomba Village",
-        subtitle: "Drilled Well",
-        description: "Located near the Namazuma Fish Camp lake. Water from the lake was very dangerous to collect because of crocodiles and hippos and so this project not only gives the villagers clean water but also safe water."
-    },
-    {
-        image: GwembeMarketThumb,
-        title: "Gwembe Market",
-        subtitle: "Drilled Well",
-        description: "The Gwembe Market previously had no running water. This well allows the market to stay open longer which makes for an even larger economic impact than is typical with most well projects. The addition of clean water at the market also allows for produce to be washed in clean water."
-    }
-];
 
 const ProjectListCanada = [
     {
@@ -62,9 +45,6 @@ class Projects extends React.Component {
 
     render() {
         const active = this.state.active;
-        console.log(this.state);
-
-        console.log(this.props);
         return (
             <section className="t-home-projects" id="projects">
                 <div className="row t-home-projects__inner">
