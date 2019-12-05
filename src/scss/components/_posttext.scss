@@ -1,0 +1,44 @@
+.c-posttext {
+  h2 {
+    @extend .heading--medium;
+  }
+
+  h3 {
+    @extend .heading--small;
+  }
+
+  p,
+  li {
+    @extend .bodytext--large;
+    color: #090909;
+  }
+
+  li {
+    line-height: 1.2;
+    padding-bottom: 0.25em;
+  }
+
+  ul,
+  ol {
+    margin-left: 1.25em;
+    padding-left: 0.5em;
+    padding-bottom: 1.75em;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: numeric;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  a {
+    color: darken($color-primary, 10%);
+    font-weight: bold;
+  }
+}

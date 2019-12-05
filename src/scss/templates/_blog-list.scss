@@ -1,0 +1,17 @@
+.t-blog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.t-blog-listitem {
+  flex: 0 0 100%;
+  padding: 0 20px 40px 20px;
+
+  @include breakpoint(medium) {
+    flex: 0 0 50%;
+  }
+
+  @include breakpoint(large) {
+    flex: 0 0 33.33%;
+  }
+}

@@ -1,0 +1,14 @@
+.c-postimage {
+  margin-bottom: 50px;
+
+  &__img {
+    padding-bottom: 20px;
+  }
+
+  &__caption {
+    font-style: italic;
+    color: $color-text;
+    padding-bottom: 20px;
+    border-bottom: solid 1px $color-text;
+  }
+}

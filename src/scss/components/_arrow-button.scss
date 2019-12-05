@@ -1,26 +1,32 @@
 .c-arrow-button {
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $color-primary;
+
+  &__icon {
+    width: 0.8em;
+    height: 0.8em;
+    margin-top: 0.1em;
+    margin-left: 0.5em;
+
+    path {
+      fill: currentColor;
+    }
+
+    &--right {
+      margin-right: 0.5em;
+      margin-left: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  &--primary {
     color: $color-primary;
+  }
 
-    &__icon {
-        width: 0.8em;
-        height: 0.8em;
-        margin-top: 0.1em;
-        margin-left: 0.5em;
-
-        path {
-            fill: currentColor;
-        }
-    }
-
-    &--primary {
-        color: $color-primary;
-    }
-
-    &--white {
-        color: white;
-    }
+  &--white {
+    color: white;
+  }
 }

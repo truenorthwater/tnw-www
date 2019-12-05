@@ -25,6 +25,12 @@
 @import 'components/project-description';
 @import 'components/project-details';
 
+@import 'components/blog-listitem';
+
+@import 'components/postquote';
+@import 'components/postimage';
+@import 'components/posttext';
+
 @import 'templates/header';
 @import 'templates/footer';
 @import 'templates/standard-hero';
@@ -49,11 +55,14 @@
 @import 'templates/project-hero';
 @import 'templates/project-main';
 
-html, body {
-    font-family: $font-secondary;
-    color: #4A4A4A;
+@import 'templates/blog-list';
+
+html,
+body {
+  font-family: $font-secondary;
+  color: #4a4a4a;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }

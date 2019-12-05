@@ -1,0 +1,31 @@
+.c-postquote {
+  padding-bottom: 50px;
+
+  &__text {
+    position: relative;
+    font-size: 36px;
+    padding-bottom: 20px;
+    color: $color-text;
+
+    &:before {
+      position: absolute;
+      font-size: 3em;
+      right: 100%;
+      top: 0;
+      padding-right: 5px;
+      content: '“';
+      font-family: sans-serif;
+      opacity: 0.4;
+    }
+  }
+
+  &__attribution {
+    strong {
+      font-weight: bold;
+    }
+
+    &:before {
+      content: '- ';
+    }
+  }
+}
