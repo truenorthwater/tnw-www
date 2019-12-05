@@ -2,17 +2,36 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 import Hero from '../components/Layout/StandardHero'
+export const query = graphql`
+  {
+    prismic {
+      allPosts(sortBy: date_DESC) {
+        edges {
+          node {
+            _meta {
+              id
+              uid
+              type
+            }
+            title
+            date
+          }
+        }
+      }
+    }
+  }
+`
 
 const RefundPage = () => (
   <Layout
-    title="Refunds - True North Water"
-    description="Information about True North Water's refund policy when pertaining to charitable donations."
+    title="Blog - True North Water"
+    description="Updates from True North Water around our projects, our mission, and noteworthy events."
   >
-    <Hero title="Refunds" />
+    <Hero title="Blog" />
 
     <section className="">
       <div className="row row--padmedium">
-        <article className="col medium-offset-3 medium-6">
+        <article className="col medium-offset-1 medium-9">
           <h2 className="heading heading--medium">General Information</h2>
           <p className="bodytext">
             Generally, a donation to True North Water is, like all charitable
