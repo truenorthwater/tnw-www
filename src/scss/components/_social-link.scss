@@ -1,0 +1,17 @@
+.c-social-link {
+  position: relative;
+  display: inline-flex;
+  padding-right: 1.5em;
+
+  font-size: 16px;
+  font-family: $font-secondary;
+  text-decoration: none;
+  font-weight: bold;
+  color: darken($color-primary, 10%);
+
+  svg {
+    margin-right: 0.25em;
+
+    fill: currentColor;
+  }
+}

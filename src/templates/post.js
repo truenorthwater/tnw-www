@@ -10,6 +10,9 @@ import PostImage from '../components/PostImage'
 import PostText from '../components/PostText'
 import ArrowButton from '../components/ArrowButton'
 
+import IconFacebook from '../components/Icon/IconFacebook'
+import IconTwitter from '../components/Icon/IconTwitter'
+
 const extractImageFromKey = (obj, key) => {
   if (!obj[key]) return null
   const { url, alt } = obj[key]
@@ -76,7 +79,7 @@ const Post = ({ data: { prismicBlogPost } }) => {
   console.log(prismicBlogPost)
   const { slug, title, date, image, body } = convertToPostData(prismicBlogPost)
 
-  const url = ''
+  const url = `https://truenorthwater.org/blog/${slug}`
   return (
     <Layout title={title} description={title}>
       <section className="t-project-hero">
@@ -99,17 +102,24 @@ const Post = ({ data: { prismicBlogPost } }) => {
           {body.map(renderBodySection)}
           <footer>
             <a
+              className="c-social-link"
               href={`https://twitter.com/intent/tweet/?text=${title}&url=${url}`}
             >
+              <IconTwitter width="16px" height="16px" />
               Share on Twitter
-            </a>
-            <a href={`http://www.facebook.com/sharer.php?u=${url}`}>
+            </a>{' '}
+            <a
+              href={`http://www.facebook.com/sharer.php?u=${url}`}
+              className="c-social-link"
+            >
+              <IconFacebook width="16px" height="16px" />
               Share on Facebook
-            </a>
+            </a>{' '}
             <a
               href={`https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}`}
+              className="c-social-link"
             >
-              Share on Twitter
+              Share on LinkedIn
             </a>
           </footer>
         </div>
